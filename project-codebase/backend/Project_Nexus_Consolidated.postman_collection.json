@@ -1,0 +1,398 @@
+{
+    "info": {
+        "_postman_id": "4e72f7a0-9b8a-4953-878f-1b537467c667",
+        "name": "Project Nexus API - Final Edition",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "1. Auth",
+            "item": [
+                {
+                    "name": "Login",
+                    "request": {
+                        "method": "POST",
+                        "header": [],
+                        "body": {
+                            "mode": "urlencoded",
+                            "urlencoded": [
+                                {
+                                    "key": "username",
+                                    "value": "khilav@tatvic.com",
+                                    "type": "text"
+                                },
+                                {
+                                    "key": "password",
+                                    "value": "Admin@123",
+                                    "type": "text"
+                                }
+                            ]
+                        },
+                        "url": {
+                            "raw": "{{base_url}}/auth/login",
+                            "host": [
+                                "{{base_url}}"
+                            ],
+                            "path": [
+                                "auth",
+                                "login"
+                            ]
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "2. Discovery & Access Control",
+            "item": [
+                {
+                    "name": "List Accessible Projects",
+                    "request": {
+                        "method": "GET",
+                        "url": {
+                            "raw": "{{base_url}}/access/projects",
+                            "path": [
+                                "access",
+                                "projects"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "List Accessible Clients",
+                    "request": {
+                        "method": "GET",
+                        "url": {
+                            "raw": "{{base_url}}/access/clients",
+                            "path": [
+                                "access",
+                                "clients"
+                            ]
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "3. Project Stakeholders (External)",
+            "item": [
+                {
+                    "name": "List Stakeholders for Project",
+                    "request": {
+                        "method": "GET",
+                        "url": {
+                            "raw": "{{base_url}}/stakeholders/:project_id",
+                            "path": [
+                                "stakeholders",
+                                ":project_id"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "PATCH Stakeholder",
+                    "request": {
+                        "method": "PATCH",
+                        "body": {
+                            "mode": "json",
+                            "json": {
+                                "email": "corrected@client.com",
+                                "phone": "+1-123-456"
+                            }
+                        },
+                        "url": {
+                            "raw": "{{base_url}}/stakeholders/:stakeholder_id",
+                            "path": [
+                                "stakeholders",
+                                ":stakeholder_id"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "DELETE Stakeholder",
+                    "request": {
+                        "method": "DELETE",
+                        "url": {
+                            "raw": "{{base_url}}/stakeholders/:stakeholder_id",
+                            "path": [
+                                "stakeholders",
+                                ":stakeholder_id"
+                            ]
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "4. Project Sections (Living Documents)",
+            "item": [
+                {
+                    "name": "1. Universal Context",
+                    "item": [
+                        {
+                            "name": "GET Context",
+                            "request": {
+                                "method": "GET",
+                                "url": {
+                                    "raw": "{{base_url}}/context/:project_id",
+                                    "path": [
+                                        "context",
+                                        ":project_id"
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "name": "PATCH Context",
+                            "request": {
+                                "method": "PATCH",
+                                "body": {
+                                    "mode": "json",
+                                    "json": {
+                                        "summary": "Updated summary"
+                                    }
+                                },
+                                "url": {
+                                    "raw": "{{base_url}}/context/:project_id",
+                                    "path": [
+                                        "context",
+                                        ":project_id"
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "name": "DELETE Context",
+                            "request": {
+                                "method": "DELETE",
+                                "url": {
+                                    "raw": "{{base_url}}/context/:project_id",
+                                    "path": [
+                                        "context",
+                                        ":project_id"
+                                    ]
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "2. Operations State",
+                    "item": [
+                        {
+                            "name": "GET Ops",
+                            "request": {
+                                "method": "GET",
+                                "url": {
+                                    "raw": "{{base_url}}/ops/:project_id",
+                                    "path": [
+                                        "ops",
+                                        ":project_id"
+                                    ]
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "3. Technical State",
+                    "item": [
+                        {
+                            "name": "GET Tech",
+                            "request": {
+                                "method": "GET",
+                                "url": {
+                                    "raw": "{{base_url}}/tech/:project_id",
+                                    "path": [
+                                        "tech",
+                                        ":project_id"
+                                    ]
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "4. Commercial State",
+                    "item": [
+                        {
+                            "name": "GET Commercial",
+                            "request": {
+                                "method": "GET",
+                                "url": {
+                                    "raw": "{{base_url}}/comm/:project_id",
+                                    "path": [
+                                        "comm",
+                                        ":project_id"
+                                    ]
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "5. Strategy State",
+                    "item": [
+                        {
+                            "name": "GET Strategy",
+                            "request": {
+                                "method": "GET",
+                                "url": {
+                                    "raw": "{{base_url}}/strat/:project_id",
+                                    "path": [
+                                        "strat",
+                                        ":project_id"
+                                    ]
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "6. Marketing State",
+                    "item": [
+                        {
+                            "name": "GET Marketing",
+                            "request": {
+                                "method": "GET",
+                                "url": {
+                                    "raw": "{{base_url}}/mktg/:project_id",
+                                    "path": [
+                                        "mktg",
+                                        ":project_id"
+                                    ]
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "7. Misc State",
+                    "item": [
+                        {
+                            "name": "GET Misc",
+                            "request": {
+                                "method": "GET",
+                                "url": {
+                                    "raw": "{{base_url}}/misc/:project_id",
+                                    "path": [
+                                        "misc",
+                                        ":project_id"
+                                    ]
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "5. Ingestion",
+            "item": [
+                {
+                    "name": "Upload Implicit Narrative",
+                    "request": {
+                        "method": "POST",
+                        "body": {
+                            "mode": "json",
+                            "json": {
+                                "text": "Project Tatvic update: New POC is Alex (CTO), email alex@tatvic.com",
+                                "source_type": "email",
+                                "client_id": "Tatvic Analytics",
+                                "project_id": "Internal Al"
+                            }
+                        },
+                        "url": {
+                            "raw": "{{base_url}}/ingest/upload",
+                            "path": [
+                                "ingest",
+                                "upload"
+                            ]
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "6. Admin",
+            "item": [
+                {
+                    "name": "List Users",
+                    "request": {
+                        "method": "GET",
+                        "url": {
+                            "raw": "{{base_url}}/admin/users",
+                            "path": [
+                                "admin",
+                                "users"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "View Active Roles",
+                    "request": {
+                        "method": "GET",
+                        "url": {
+                            "raw": "{{base_url}}/admin/roles",
+                            "path": [
+                                "admin",
+                                "roles"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "Assign User to Project",
+                    "request": {
+                        "method": "POST",
+                        "body": {
+                            "mode": "json",
+                            "json": {
+                                "email": "khush@tatvic.com",
+                                "role_in_project": "Technical Lead",
+                                "view_access": [
+                                    "1_universal",
+                                    "2_ops"
+                                ],
+                                "edit_access": [
+                                    "2_ops"
+                                ]
+                            }
+                        },
+                        "url": {
+                            "raw": "{{base_url}}/admin/projects/:project_id/assign",
+                            "path": [
+                                "admin",
+                                "projects",
+                                ":project_id",
+                                "assign"
+                            ]
+                        }
+                    }
+                }
+            ]
+        }
+    ],
+    "variable": [
+        {
+            "key": "base_url",
+            "value": "http://localhost:8000/api/v1"
+        },
+        {
+            "key": "token",
+            "value": ""
+        }
+    ],
+    "auth": {
+        "type": "bearer",
+        "bearer": [
+            {
+                "key": "token",
+                "value": "{{token}}",
+                "type": "string"
+            }
+        ]
+    }
+}

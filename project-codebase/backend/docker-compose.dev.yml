@@ -1,0 +1,39 @@
+services:
+  backend:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    container_name: project_nexus_backend_dev
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
+    volumes:
+      # Persist Logs
+      - logs_data:/app/logs
+      # Mount data directory for imports
+      - ./data:/app/data
+      # Mount source code for hot reload (development only)
+      - ./app:/app/app
+      - ./scripts:/app/scripts
+    restart: unless-stopped
+    healthcheck:
+      test: [ "CMD", "python3", "-c", "import http.client; conn = http.client.HTTPConnection('localhost', 8000); conn.request('GET', '/health'); r = conn.getresponse(); exit(0 if r.status == 200 else 1)" ]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+    networks:
+      - nexus_network
+    # Development-specific settings
+    environment:
+      - DEBUG=true
+      - LOG_LEVEL=DEBUG
+
+volumes:
+  logs_data:
+    driver: local
+
+networks:
+  nexus_network:
+    driver: bridge

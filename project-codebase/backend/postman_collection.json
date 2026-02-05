@@ -1,0 +1,691 @@
+{
+    "info": {
+        "_postman_id": "nexus-absolute-source-of-truth",
+        "name": "Project Nexus API - Absolute Source of Truth",
+        "description": "Every single endpoint in the system. Guaranteed comprehensive for frontend integration.",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "🔐 Auth & Identity",
+            "item": [
+                {
+                    "name": "JWT Login",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/x-www-form-urlencoded"
+                            }
+                        ],
+                        "body": {
+                            "mode": "urlencoded",
+                            "urlencoded": [
+                                {
+                                    "key": "username",
+                                    "value": "admin@tatvic.com",
+                                    "type": "text"
+                                },
+                                {
+                                    "key": "password",
+                                    "value": "admin",
+                                    "type": "text"
+                                }
+                            ]
+                        },
+                        "url": "{{base_url}}/api/v1/auth/access-token"
+                    }
+                },
+                {
+                    "name": "Profile Details",
+                    "request": {
+                        "method": "GET",
+                        "url": "{{base_url}}/api/v1/auth/me"
+                    }
+                },
+                {
+                    "name": "List Users (Admin)",
+                    "request": {
+                        "method": "GET",
+                        "url": "{{base_url}}/api/v1/auth/users"
+                    }
+                },
+                {
+                    "name": "Change Password",
+                    "request": {
+                        "method": "POST",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"current_password\": \"actual_pass\", \"new_password\": \"new_pass\"}"
+                        },
+                        "url": "{{base_url}}/api/v1/auth/change-password"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "📂 Project Management (Core)",
+            "item": [
+                {
+                    "name": "List All Accessible",
+                    "request": {
+                        "method": "GET",
+                        "url": "{{base_url}}/api/v1/projects/"
+                    }
+                },
+                {
+                    "name": "Get Specific Client Projects",
+                    "request": {
+                        "method": "GET",
+                        "url": "{{base_url}}/api/v1/projects/{{client_id}}"
+                    }
+                },
+                {
+                    "name": "Get Deep Project JSON",
+                    "request": {
+                        "method": "GET",
+                        "url": "{{base_url}}/api/v1/projects/{{client_id}}/{{project_id}}"
+                    }
+                },
+                {
+                    "name": "Create Project Shell",
+                    "request": {
+                        "method": "POST",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"project_id\": \"999\",\n    \"client_id\": \"tatvic\",\n    \"name\": \"Internal Hub\",\n    \"assigned_users\": [\"admin@tatvic.com\"]\n}"
+                        },
+                        "url": "{{base_url}}/api/v1/projects/"
+                    }
+                },
+                {
+                    "name": "Update Metadata",
+                    "request": {
+                        "method": "PATCH",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"name\": \"Updated Name\", \"department\": \"Data Engineering\"}"
+                        },
+                        "url": "{{base_url}}/api/v1/projects/{{client_id}}/{{project_id}}"
+                    }
+                },
+                {
+                    "name": "Delete Project",
+                    "request": {
+                        "method": "DELETE",
+                        "url": "{{base_url}}/api/v1/projects/{{client_id}}/{{project_id}}"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "⚖️ Permissions & RBAC",
+            "item": [
+                {
+                    "name": "List Project Users",
+                    "request": {
+                        "method": "GET",
+                        "url": "{{base_url}}/api/v1/projects/{{client_id}}/{{project_id}}/permissions"
+                    }
+                },
+                {
+                    "name": "Assign New Team Member",
+                    "request": {
+                        "method": "POST",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"email\": \"member@tatvic.com\", \"role\": \"Senior\"}"
+                        },
+                        "url": "{{base_url}}/api/v1/projects/{{client_id}}/{{project_id}}/assign"
+                    }
+                },
+                {
+                    "name": "Delegate Section Permission",
+                    "request": {
+                        "method": "POST",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"delegate_email\": \"intern@tatvic.com\",\n    \"section_permissions\": {\n        \"operations\": \"EDIT\",\n        \"technical\": \"VIEW\"\n    }\n}"
+                        },
+                        "url": "{{base_url}}/api/v1/projects/{{client_id}}/{{project_id}}/delegate"
+                    }
+                },
+                {
+                    "name": "Revoke Access",
+                    "request": {
+                        "method": "DELETE",
+                        "url": "{{base_url}}/api/v1/projects/{{client_id}}/{{project_id}}/permissions/intern@tatvic.com"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "🌐 Universal Context Section",
+            "item": [
+                {
+                    "name": "Global Section View",
+                    "request": {
+                        "method": "GET",
+                        "url": "{{base_url}}/api/v1/universal-context/{{client_id}}/{{project_id}}"
+                    }
+                },
+                {
+                    "name": "Get AI Summary",
+                    "request": {
+                        "method": "GET",
+                        "url": "{{base_url}}/api/v1/universal-context/{{client_id}}/{{project_id}}/summary"
+                    }
+                },
+                {
+                    "name": "Update AI Summary",
+                    "request": {
+                        "method": "PUT",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"value\": \"The project is currently tracking...\"}"
+                        },
+                        "url": "{{base_url}}/api/v1/universal-context/{{client_id}}/{{project_id}}/summary"
+                    }
+                },
+                {
+                    "name": "View Timeline",
+                    "request": {
+                        "method": "GET",
+                        "url": "{{base_url}}/api/v1/universal-context/{{client_id}}/{{project_id}}/timeline"
+                    }
+                },
+                {
+                    "name": "Append Timeline Event",
+                    "request": {
+                        "method": "POST",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"date\": \"2024-01-31\", \"event\": \"SOW Signed\", \"significance\": \"High\"}"
+                        },
+                        "url": "{{base_url}}/api/v1/universal-context/{{client_id}}/{{project_id}}/timeline"
+                    }
+                },
+                {
+                    "name": "View POC Map",
+                    "request": {
+                        "method": "GET",
+                        "url": "{{base_url}}/api/v1/universal-context/{{client_id}}/{{project_id}}/poc_map"
+                    }
+                },
+                {
+                    "name": "Add Client POC",
+                    "request": {
+                        "method": "POST",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"name\": \"John Doe\", \"role\": \"CTO\", \"email\": \"john@client.com\"}"
+                        },
+                        "url": "{{base_url}}/api/v1/universal-context/{{client_id}}/{{project_id}}/poc_map"
+                    }
+                },
+                {
+                    "name": "View Tatvic Squad",
+                    "request": {
+                        "method": "GET",
+                        "url": "{{base_url}}/api/v1/universal-context/{{client_id}}/{{project_id}}/internal_squad"
+                    }
+                },
+                {
+                    "name": "Update Hygiene Profile",
+                    "request": {
+                        "method": "PUT",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"last_meeting\": \"2024-01-25\", \"response_time\": \"4 hours\"}"
+                        },
+                        "url": "{{base_url}}/api/v1/universal-context/{{client_id}}/{{project_id}}/communication"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "⚙️ Operations Section",
+            "item": [
+                {
+                    "name": "Full Ops Section",
+                    "request": {
+                        "method": "GET",
+                        "url": "{{base_url}}/api/v1/operations/{{client_id}}/{{project_id}}"
+                    }
+                },
+                {
+                    "name": "Traffic Light (Details)",
+                    "request": {
+                        "method": "GET",
+                        "url": "{{base_url}}/api/v1/operations/{{client_id}}/{{project_id}}/traffic_light"
+                    }
+                },
+                {
+                    "name": "Update Traffic Status",
+                    "request": {
+                        "method": "PUT",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"value\": \"Yellow\", \"reason\": \"Dependency delay\"}"
+                        },
+                        "url": "{{base_url}}/api/v1/operations/{{client_id}}/{{project_id}}/traffic_light"
+                    }
+                },
+                {
+                    "name": "Get All Tasks",
+                    "request": {
+                        "method": "GET",
+                        "url": "{{base_url}}/api/v1/operations/{{client_id}}/{{project_id}}/tasks"
+                    }
+                },
+                {
+                    "name": "Post Upcoming Task",
+                    "request": {
+                        "method": "POST",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"title\": \"Sprint Planning\", \"due_date\": \"2024-02-01\"}"
+                        },
+                        "url": "{{base_url}}/api/v1/operations/{{client_id}}/{{project_id}}/tasks/upcoming"
+                    }
+                },
+                {
+                    "name": "Post Ongoing Task",
+                    "request": {
+                        "method": "POST",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"title\": \"Code Audit\", \"assignee\": \"Lead Dev\"}"
+                        },
+                        "url": "{{base_url}}/api/v1/operations/{{client_id}}/{{project_id}}/tasks/ongoing"
+                    }
+                },
+                {
+                    "name": "View Active Blockers",
+                    "request": {
+                        "method": "GET",
+                        "url": "{{base_url}}/api/v1/operations/{{client_id}}/{{project_id}}/blockers"
+                    }
+                },
+                {
+                    "name": "Raise New Blocker",
+                    "request": {
+                        "method": "POST",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"description\": \"Missing production logs\", \"severity\": \"High\"}"
+                        },
+                        "url": "{{base_url}}/api/v1/operations/{{client_id}}/{{project_id}}/blockers"
+                    }
+                },
+                {
+                    "name": "Interaction History",
+                    "request": {
+                        "method": "GET",
+                        "url": "{{base_url}}/api/v1/operations/{{client_id}}/{{project_id}}/interactions"
+                    }
+                },
+                {
+                    "name": "Add New Interaction",
+                    "request": {
+                        "method": "POST",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"date\": \"2024-01-31\", \"type\": \"Email\", \"summary\": \"Follow-up on GA-001\"}"
+                        },
+                        "url": "{{base_url}}/api/v1/operations/{{client_id}}/{{project_id}}/interactions"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "💰 Commercial Section",
+            "item": [
+                {
+                    "name": "Detailed Commercial",
+                    "request": {
+                        "method": "GET",
+                        "url": "{{base_url}}/api/v1/commercial/{{client_id}}/{{project_id}}"
+                    }
+                },
+                {
+                    "name": "SOW Timeline/Value",
+                    "request": {
+                        "method": "GET",
+                        "url": "{{base_url}}/api/v1/commercial/{{client_id}}/{{project_id}}/sow"
+                    }
+                },
+                {
+                    "name": "Update SOW Meta",
+                    "request": {
+                        "method": "PUT",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"sow_id\": \"SOW-X\", \"value\": 50000, \"status\": \"signed\"}"
+                        },
+                        "url": "{{base_url}}/api/v1/commercial/{{client_id}}/{{project_id}}/sow"
+                    }
+                },
+                {
+                    "name": "Financial Overview",
+                    "request": {
+                        "method": "GET",
+                        "url": "{{base_url}}/api/v1/commercial/{{client_id}}/{{project_id}}/financial"
+                    }
+                },
+                {
+                    "name": "Update Financials",
+                    "request": {
+                        "method": "PUT",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"total_billed\": 25000, \"outstanding\": 5000}"
+                        },
+                        "url": "{{base_url}}/api/v1/commercial/{{client_id}}/{{project_id}}/financial"
+                    }
+                },
+                {
+                    "name": "Invoices Record",
+                    "request": {
+                        "method": "GET",
+                        "url": "{{base_url}}/api/v1/commercial/{{client_id}}/{{project_id}}/invoices"
+                    }
+                },
+                {
+                    "name": "Submit Invoice",
+                    "request": {
+                        "method": "POST",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"invoice_id\": \"INV-1\", \"amount\": 5000, \"date\": \"2024-01-31\"}"
+                        },
+                        "url": "{{base_url}}/api/v1/commercial/{{client_id}}/{{project_id}}/invoices"
+                    }
+                },
+                {
+                    "name": "Upcoming Renewals",
+                    "request": {
+                        "method": "GET",
+                        "url": "{{base_url}}/api/v1/commercial/{{client_id}}/{{project_id}}/renewals"
+                    }
+                },
+                {
+                    "name": "Post Renewal Option",
+                    "request": {
+                        "method": "POST",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"contract_name\": \"Support v2\", \"renewal_date\": \"2025-01-31\"}"
+                        },
+                        "url": "{{base_url}}/api/v1/commercial/{{client_id}}/{{project_id}}/renewals"
+                    }
+                },
+                {
+                    "name": "Revenue Mix",
+                    "request": {
+                        "method": "GET",
+                        "url": "{{base_url}}/api/v1/commercial/{{client_id}}/{{project_id}}/revenue_channels"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "🛠️ Technical Section",
+            "item": [
+                {
+                    "name": "Technical Hub",
+                    "request": {
+                        "method": "GET",
+                        "url": "{{base_url}}/api/v1/technical/{{client_id}}/{{project_id}}"
+                    }
+                },
+                {
+                    "name": "Tech Stack View",
+                    "request": {
+                        "method": "GET",
+                        "url": "{{base_url}}/api/v1/technical/{{client_id}}/{{project_id}}/tech_stack"
+                    }
+                },
+                {
+                    "name": "Add Tech Mastery",
+                    "request": {
+                        "method": "POST",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"technology\": \"Snowflake\", \"category\": \"Data Lake\"}"
+                        },
+                        "url": "{{base_url}}/api/v1/technical/{{client_id}}/{{project_id}}/tech_stack"
+                    }
+                },
+                {
+                    "name": "Credentials Vault",
+                    "request": {
+                        "method": "GET",
+                        "url": "{{base_url}}/api/v1/technical/{{client_id}}/{{project_id}}/credentials"
+                    }
+                },
+                {
+                    "name": "Add Tool Credential",
+                    "request": {
+                        "method": "POST",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"system\": \"Bitbucket\", \"url\": \"bitbucket.org\"}"
+                        },
+                        "url": "{{base_url}}/api/v1/technical/{{client_id}}/{{project_id}}/credentials"
+                    }
+                },
+                {
+                    "name": "Implementation Logs",
+                    "request": {
+                        "method": "GET",
+                        "url": "{{base_url}}/api/v1/technical/{{client_id}}/{{project_id}}/implementations"
+                    }
+                },
+                {
+                    "name": "Experiment Outcomes",
+                    "request": {
+                        "method": "GET",
+                        "url": "{{base_url}}/api/v1/technical/{{client_id}}/{{project_id}}/experiments"
+                    }
+                },
+                {
+                    "name": "Log New Experiment",
+                    "request": {
+                        "method": "POST",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"name\": \"Checkout A/B v2\", \"hypothesis\": \"Minimal UI wins\"}"
+                        },
+                        "url": "{{base_url}}/api/v1/technical/{{client_id}}/{{project_id}}/experiments"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "📈 Strategy & Marketing",
+            "item": [
+                {
+                    "name": "Stakeholder Analysis",
+                    "request": {
+                        "method": "GET",
+                        "url": "{{base_url}}/api/v1/strategy/{{client_id}}/{{project_id}}/stakeholders"
+                    }
+                },
+                {
+                    "name": "Roadmap Goals",
+                    "request": {
+                        "method": "GET",
+                        "url": "{{base_url}}/api/v1/strategy/{{client_id}}/{{project_id}}/roadmap"
+                    }
+                },
+                {
+                    "name": "Marketing Brand Doc",
+                    "request": {
+                        "method": "GET",
+                        "url": "{{base_url}}/api/v1/marketing/{{client_id}}/{{project_id}}"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "🧩 Universal Section API (Generic Access)",
+            "item": [
+                {
+                    "name": "Fetch Section (Dynamic)",
+                    "request": {
+                        "method": "GET",
+                        "url": "{{base_url}}/api/v1/sections/{{client_id}}/{{project_id}}/operations"
+                    }
+                },
+                {
+                    "name": "Partial Update (Dynamic)",
+                    "request": {
+                        "method": "PATCH",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"any_field\": \"any_value\"}"
+                        },
+                        "url": "{{base_url}}/api/v1/sections/{{client_id}}/{{project_id}}/operations"
+                    }
+                },
+                {
+                    "name": "Fetch Single Field",
+                    "request": {
+                        "method": "GET",
+                        "url": "{{base_url}}/api/v1/sections/{{client_id}}/{{project_id}}/operations/status"
+                    }
+                },
+                {
+                    "name": "Wipe Section Data",
+                    "request": {
+                        "method": "DELETE",
+                        "url": "{{base_url}}/api/v1/sections/{{client_id}}/{{project_id}}/operations"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "🤖 Automation & AI extraction",
+            "item": [
+                {
+                    "name": "Reset All Sync States",
+                    "request": {
+                        "method": "POST",
+                        "url": "{{base_url}}/api/v1/automation/basecamp/reset"
+                    }
+                },
+                {
+                    "name": "Trigger Basecamp Ecosystem Fetch",
+                    "request": {
+                        "method": "POST",
+                        "url": "{{base_url}}/api/v1/automation/basecamp/sync"
+                    }
+                },
+                {
+                    "name": "Run Fusion Intelligence (RAG)",
+                    "request": {
+                        "method": "POST",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"project_name\": \"ICICI Lombard\"\n}"
+                        },
+                        "url": "{{base_url}}/api/v1/automation/extract"
+                    }
+                },
+                {
+                    "name": "Ingest Email/Doc Snippet",
+                    "request": {
+                        "method": "POST",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"text\": \"Project update: Moving to phase 2 next week.\",\n    \"metadata\": {\"source\": \"email\", \"project_id\": \"41106708\"}\n}"
+                        },
+                        "url": "{{base_url}}/api/v1/automation/ingest"
+                    }
+                },
+                {
+                    "name": "List Basecamp Projects",
+                    "request": {
+                        "method": "GET",
+                        "url": "{{base_url}}/api/v1/automation/basecamp/projects"
+                    }
+                },
+                {
+                    "name": "Sync Specific Project",
+                    "request": {
+                        "method": "POST",
+                        "url": "{{base_url}}/api/v1/automation/basecamp/sync/{{project_id}}"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "📥 Files & Raw Ingestion",
+            "item": [
+                {
+                    "name": "Upload File (FormData)",
+                    "request": {
+                        "method": "POST",
+                        "body": {
+                            "mode": "formdata",
+                            "formdata": [
+                                {
+                                    "key": "client_id",
+                                    "value": "basecamp",
+                                    "type": "text"
+                                },
+                                {
+                                    "key": "file",
+                                    "type": "file",
+                                    "src": []
+                                }
+                            ]
+                        },
+                        "url": "{{base_url}}/api/v1/ingest/manual"
+                    }
+                },
+                {
+                    "name": "Check Queue Depth",
+                    "request": {
+                        "method": "GET",
+                        "url": "{{base_url}}/api/v1/ingest/status"
+                    }
+                }
+            ]
+        }
+    ],
+    "auth": {
+        "type": "bearer",
+        "bearer": [
+            {
+                "key": "token",
+                "value": "{{access_token}}",
+                "type": "string"
+            }
+        ]
+    },
+    "variable": [
+        {
+            "key": "base_url",
+            "value": "http://localhost:8000",
+            "type": "string"
+        },
+        {
+            "key": "access_token",
+            "value": "JWT_TOKEN_HERE",
+            "type": "string"
+        },
+        {
+            "key": "client_id",
+            "value": "basecamp",
+            "type": "string"
+        },
+        {
+            "key": "project_id",
+            "value": "41106708",
+            "type": "string"
+        }
+    ]
+}

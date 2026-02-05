@@ -1,0 +1,46 @@
+--extra-index-url https://aiinfra.pkgs.visualstudio.com/PublicPackages/_packaging/ORT-Nightly/pypi/simple/
+# Core API
+fastapi>=0.110.0
+uvicorn>=0.27.0
+pydantic>=2.6.0
+email-validator>=2.1.0
+pydantic-settings>=2.1.0
+python-multipart>=0.0.9
+httpx>=0.26.0
+
+# Database
+motor>=3.3.0
+beanie>=1.26.0
+onnxruntime>=1.24.0.dev
+chromadb>=1.0.0
+numpy>=2.1.0
+pinecone>=5.1.0
+
+# Security
+passlib[bcrypt]==1.7.4
+bcrypt==4.0.1
+python-jose[cryptography]==3.3.0
+
+# Utils
+cachetools==5.3.2
+beautifulsoup4==4.12.3
+pypdf==4.0.1
+python-docx==1.1.0
+apscheduler==3.10.4
+nest_asyncio==1.6.0
+
+# AI & LLM Stack
+langchain>=0.1.0
+langchain-community>=0.0.24
+langchain-core>=0.1.27
+langchain-groq>=0.1.0
+langchain-google-genai>=2.0.0
+google-genai>=1.0.0
+langgraph>=0.2.0
+langchain-text-splitters>=0.2.0
+langchain-chroma>=0.1.2
+langchain-ollama>=0.1.0
+
+# ML Core (Cloud-First for Python 3.14)
+# Note: torch and sentence-transformers are removed due to DLL issues on 3.14/Windows
+tiktoken>=0.6.0

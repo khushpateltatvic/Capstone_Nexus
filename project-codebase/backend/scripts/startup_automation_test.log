@@ -1,0 +1,129 @@
+2026-02-03 14:20:35,403 - root - INFO - Initialized Gemini embeddings
+2026-02-03 14:20:35,516 - root - INFO - Vector Store Provider: Pinecone (Cloud)
+2026-02-03 14:20:35,541 - root - INFO - === BASECAMP SERVICE INITIALIZATION ===
+2026-02-03 14:20:35,542 - root - INFO - ENABLE_BASECAMP: True
+2026-02-03 14:20:35,542 - root - INFO - BASECAMP_ACCESS_TOKEN: SET
+2026-02-03 14:20:35,542 - root - INFO - BASECAMP_ACCOUNT_ID: 3222742
+2026-02-03 14:20:35,542 - root - INFO - BASECAMP_USER_AGENT: Basecamp Full Export (parshwa@tatvic.com)
+2026-02-03 14:20:35,542 - root - INFO - BASECAMP_PROJECT_IDS: 41106708,37845892,37425961,14694380
+2026-02-03 14:20:35,543 - root - INFO - ✅ Basecamp service ENABLED with 4 projects: ['41106708', '37845892', '37425961', '14694380']
+2026-02-03 14:20:35,543 - root - INFO - Account ID: 3222742
+2026-02-03 14:20:35,543 - root - INFO - Base URL: https://3.basecampapi.com
+2026-02-03 14:20:35,543 - root - INFO - === END BASECAMP INITIALIZATION ===
+2026-02-03 14:20:35,543 - root - INFO - 
+2026-02-03 14:20:36,979 - app.services.automation.startup_automation - INFO - ================================================================================
+2026-02-03 14:20:36,979 - app.services.automation.startup_automation - INFO - 🚀 STARTUP AUTOMATION CHECK INITIATED
+2026-02-03 14:20:36,979 - app.services.automation.startup_automation - INFO - ================================================================================
+2026-02-03 14:20:36,979 - app.services.automation.startup_automation - INFO - 🔧 Configuration: ENABLE_STARTUP_AUTOMATION=True
+2026-02-03 14:20:36,979 - app.services.automation.startup_automation - INFO - ✅ Database connection verified for startup automation
+2026-02-03 14:20:36,980 - app.services.automation.startup_automation - INFO - 📋 CHECKING BASECAMP STATUS...
+2026-02-03 14:20:36,980 - app.services.automation.startup_automation - INFO - 🔧 Basecamp Config: ENABLE_BASECAMP=True, Service Enabled=True
+2026-02-03 14:20:36,980 - app.services.automation.startup_automation - INFO - 📦 Basecamp Projects: ['41106708', '37845892', '37425961', '14694380']
+2026-02-03 14:20:36,980 - app.services.automation.startup_automation - INFO - 🕐 Sync cutoff time: 2026-02-02T08:50:36.980213+00:00
+2026-02-03 14:20:36,980 - root - ERROR - ❌ Error getting last sync time for 41106708: 'BasecampService' object has no attribute 'logger'
+2026-02-03 14:20:36,980 - app.services.automation.startup_automation - INFO - 📋 Project 41106708:
+2026-02-03 14:20:36,980 - app.services.automation.startup_automation - INFO -    Last Sync: None
+2026-02-03 14:20:36,980 - app.services.automation.startup_automation - INFO -    Cutoff: 2026-02-02 08:50:36.980213+00:00
+2026-02-03 14:20:36,980 - app.services.automation.startup_automation - INFO -    ⚠️  Never synced - NEEDS SYNC
+2026-02-03 14:20:36,980 - root - ERROR - ❌ Error getting last sync time for 37845892: 'BasecampService' object has no attribute 'logger'
+2026-02-03 14:20:36,980 - app.services.automation.startup_automation - INFO - 📋 Project 37845892:
+2026-02-03 14:20:36,980 - app.services.automation.startup_automation - INFO -    Last Sync: None
+2026-02-03 14:20:36,980 - app.services.automation.startup_automation - INFO -    Cutoff: 2026-02-02 08:50:36.980213+00:00
+2026-02-03 14:20:36,980 - app.services.automation.startup_automation - INFO -    ⚠️  Never synced - NEEDS SYNC
+2026-02-03 14:20:36,981 - root - ERROR - ❌ Error getting last sync time for 37425961: 'BasecampService' object has no attribute 'logger'
+2026-02-03 14:20:36,981 - app.services.automation.startup_automation - INFO - 📋 Project 37425961:
+2026-02-03 14:20:36,981 - app.services.automation.startup_automation - INFO -    Last Sync: None
+2026-02-03 14:20:36,981 - app.services.automation.startup_automation - INFO -    Cutoff: 2026-02-02 08:50:36.980213+00:00
+2026-02-03 14:20:36,981 - app.services.automation.startup_automation - INFO -    ⚠️  Never synced - NEEDS SYNC
+2026-02-03 14:20:36,981 - root - ERROR - ❌ Error getting last sync time for 14694380: 'BasecampService' object has no attribute 'logger'
+2026-02-03 14:20:36,981 - app.services.automation.startup_automation - INFO - 📋 Project 14694380:
+2026-02-03 14:20:36,981 - app.services.automation.startup_automation - INFO -    Last Sync: None
+2026-02-03 14:20:36,981 - app.services.automation.startup_automation - INFO -    Cutoff: 2026-02-02 08:50:36.980213+00:00
+2026-02-03 14:20:36,981 - app.services.automation.startup_automation - INFO -    ⚠️  Never synced - NEEDS SYNC
+2026-02-03 14:20:36,981 - app.services.automation.startup_automation - INFO - 📊 Projects needing sync: 4/4
+2026-02-03 14:20:36,981 - app.services.automation.startup_automation - INFO -    📋 ['41106708', '37845892', '37425961', '14694380']
+2026-02-03 14:20:36,981 - app.services.automation.startup_automation - INFO - 🔍 Basecamp Sync Decision: True
+2026-02-03 14:20:36,981 - app.services.automation.startup_automation - INFO - 🚀 BASECAMP DATA OLDER THAN 24H - TRIGGERING STARTUP SYNC
+2026-02-03 14:20:36,981 - app.services.automation.startup_automation - INFO - ⏳ Starting Basecamp sync process...
+2026-02-03 14:20:36,981 - app.services.automation.startup_automation - INFO - 🚀 STARTING BASECAMP SYNC PROCESS
+2026-02-03 14:20:36,981 - app.services.automation.startup_automation - INFO - ============================================================
+2026-02-03 14:20:36,982 - root - INFO - 🚀 === STARTING BASECAMP SYNC ===
+2026-02-03 14:20:36,982 - root - INFO - 🔄 Full sync: False
+2026-02-03 14:20:36,982 - root - INFO - 📋 Projects to sync: ['41106708', '37845892', '37425961', '14694380']
+2026-02-03 14:20:37,028 - root - INFO - 🌐 HTTP client created, starting project sync...
+2026-02-03 14:20:37,029 - root - INFO - 📋 === PROJECT 1/4: 41106708 ===
+2026-02-03 14:20:37,029 - root - INFO - 🚀 === STARTING BASECAMP PROJECT EXPORT ===
+2026-02-03 14:20:37,029 - root - INFO - 📋 Project ID: 41106708
+2026-02-03 14:20:37,029 - root - INFO - 🔄 Full sync: False
+2026-02-03 14:20:37,030 - root - ERROR - ❌ Error getting last sync time for 41106708: 'BasecampService' object has no attribute 'logger'
+2026-02-03 14:20:37,030 - root - INFO - 📅 No previous sync found, performing full sync
+2026-02-03 14:20:37,030 - root - INFO - 🔗 Fetching project details: https://3.basecampapi.com/3222742/projects/41106708.json
+2026-02-03 14:20:37,579 - httpx - INFO - HTTP Request: GET https://3.basecampapi.com/3222742/projects/41106708.json "HTTP/1.1 200 OK"
+2026-02-03 14:20:38,581 - root - INFO - ✅ Project found: [ICICI Lombard] [Marketing Concierge Essential] [MS - T & M]
+2026-02-03 14:20:38,581 - root - INFO - 👥 === FETCHING PEOPLE ===
+2026-02-03 14:20:38,964 - httpx - INFO - HTTP Request: GET https://3.basecampapi.com/3222742/projects/41106708/people.json "HTTP/1.1 200 OK"
+2026-02-03 14:20:40,397 - httpx - INFO - HTTP Request: GET https://3.basecampapi.com/3222742/projects/41106708/people.json?page=2 "HTTP/1.1 200 OK"
+2026-02-03 14:20:41,724 - httpx - INFO - HTTP Request: GET https://3.basecampapi.com/3222742/projects/41106708/people.json?page=3 "HTTP/1.1 200 OK"
+2026-02-03 14:20:42,728 - root - INFO - 📄 Paginated fetch complete: 24 total items from 2 pages
+2026-02-03 14:20:42,728 - root - INFO - 👥 Found 24 people
+2026-02-03 14:20:42,728 - root - INFO - 🛠️ === PROCESSING 8 DOCK TOOLS ===
+2026-02-03 14:20:42,728 - root - INFO - 🛠️ [1/8] Tool: message_board - Enabled: True
+2026-02-03 14:20:42,729 - root - INFO - 🔄 Processing message_board...
+2026-02-03 14:20:42,729 - root - INFO - 💬 === PROCESSING MESSAGE BOARD ===
+2026-02-03 14:20:43,068 - httpx - INFO - HTTP Request: GET https://3.basecampapi.com/3222742/buckets/41106708/message_boards/8335408745/messages.json "HTTP/1.1 200 OK"
+2026-02-03 14:20:44,070 - root - INFO - 📄 Paginated fetch complete: 0 total items from 0 pages
+2026-02-03 14:20:44,070 - root - INFO - 💬 Found 0 messages
+2026-02-03 14:20:44,070 - root - INFO - 💬 Processed 0 messages with comments
+2026-02-03 14:20:44,070 - root - INFO - 🛠️ [2/8] Tool: todoset - Enabled: True
+2026-02-03 14:20:44,071 - root - INFO - 🔄 Processing todoset...
+2026-02-03 14:20:44,072 - root - INFO - ✅ === PROCESSING TODO LISTS ===
+2026-02-03 14:20:44,470 - httpx - INFO - HTTP Request: GET https://3.basecampapi.com/3222742/buckets/41106708/todosets/8335408749/todolists.json "HTTP/1.1 200 OK"
+2026-02-03 14:20:45,941 - httpx - INFO - HTTP Request: GET https://3.basecampapi.com/3222742/buckets/41106708/todosets/8335408749/todolists.json?page=2 "HTTP/1.1 200 OK"
+2026-02-03 14:20:47,283 - httpx - INFO - HTTP Request: GET https://3.basecampapi.com/3222742/buckets/41106708/todosets/8335408749/todolists.json?page=3 "HTTP/1.1 200 OK"
+2026-02-03 14:20:48,285 - root - INFO - 📄 Paginated fetch complete: 44 total items from 2 pages
+2026-02-03 14:20:48,285 - root - INFO - ✅ Found 44 todo lists
+2026-02-03 14:20:48,650 - httpx - INFO - HTTP Request: GET https://3.basecampapi.com/3222742/buckets/41106708/todolists/8335413492.json "HTTP/1.1 200 OK"
+2026-02-03 14:20:50,022 - httpx - INFO - HTTP Request: GET https://3.basecampapi.com/3222742/buckets/41106708/todolists/8335413492/todos.json "HTTP/1.1 200 OK"
+2026-02-03 14:20:51,463 - httpx - INFO - HTTP Request: GET https://3.basecampapi.com/3222742/buckets/41106708/todolists/8335413492/todos.json?page=2 "HTTP/1.1 200 OK"
+2026-02-03 14:20:52,465 - root - INFO - 📄 Paginated fetch complete: 4 total items from 1 pages
+2026-02-03 14:20:52,889 - httpx - INFO - HTTP Request: GET https://3.basecampapi.com/3222742/buckets/41106708/todos/8402119032.json "HTTP/1.1 200 OK"
+2026-02-03 14:20:54,298 - httpx - INFO - HTTP Request: GET https://3.basecampapi.com/3222742/buckets/41106708/recordings/8402119032/comments.json "HTTP/1.1 200 OK"
+2026-02-03 14:20:55,300 - root - INFO - 📄 Paginated fetch complete: 0 total items from 0 pages
+2026-02-03 14:20:55,668 - httpx - INFO - HTTP Request: GET https://3.basecampapi.com/3222742/buckets/41106708/todos/8509340601.json "HTTP/1.1 200 OK"
+2026-02-03 14:20:56,997 - httpx - INFO - HTTP Request: GET https://3.basecampapi.com/3222742/buckets/41106708/recordings/8509340601/comments.json "HTTP/1.1 200 OK"
+2026-02-03 14:20:57,999 - root - INFO - 📄 Paginated fetch complete: 0 total items from 0 pages
+2026-02-03 14:20:58,329 - httpx - INFO - HTTP Request: GET https://3.basecampapi.com/3222742/buckets/41106708/todos/8509780273.json "HTTP/1.1 200 OK"
+2026-02-03 14:20:59,751 - httpx - INFO - HTTP Request: GET https://3.basecampapi.com/3222742/buckets/41106708/recordings/8509780273/comments.json "HTTP/1.1 200 OK"
+2026-02-03 14:21:00,753 - root - INFO - 📄 Paginated fetch complete: 0 total items from 0 pages
+2026-02-03 14:21:01,108 - httpx - INFO - HTTP Request: GET https://3.basecampapi.com/3222742/buckets/41106708/todos/9255214260.json "HTTP/1.1 200 OK"
+2026-02-03 14:21:02,463 - httpx - INFO - HTTP Request: GET https://3.basecampapi.com/3222742/buckets/41106708/recordings/9255214260/comments.json "HTTP/1.1 200 OK"
+2026-02-03 14:21:03,465 - root - INFO - 📄 Paginated fetch complete: 0 total items from 0 pages
+2026-02-03 14:21:03,806 - httpx - INFO - HTTP Request: GET https://3.basecampapi.com/3222742/buckets/41106708/todolists/8335409194.json "HTTP/1.1 200 OK"
+2026-02-03 14:21:05,148 - httpx - INFO - HTTP Request: GET https://3.basecampapi.com/3222742/buckets/41106708/todolists/8335409194/todos.json "HTTP/1.1 200 OK"
+2026-02-03 14:21:06,150 - root - INFO - 📄 Paginated fetch complete: 0 total items from 0 pages
+2026-02-03 14:21:06,508 - httpx - INFO - HTTP Request: GET https://3.basecampapi.com/3222742/buckets/41106708/todolists/8335409184.json "HTTP/1.1 200 OK"
+2026-02-03 14:21:07,848 - httpx - INFO - HTTP Request: GET https://3.basecampapi.com/3222742/buckets/41106708/todolists/8335409184/todos.json "HTTP/1.1 200 OK"
+2026-02-03 14:21:09,180 - httpx - INFO - HTTP Request: GET https://3.basecampapi.com/3222742/buckets/41106708/todolists/8335409184/todos.json?page=2 "HTTP/1.1 200 OK"
+2026-02-03 14:21:10,182 - root - INFO - 📄 Paginated fetch complete: 2 total items from 1 pages
+2026-02-03 14:21:10,528 - httpx - INFO - HTTP Request: GET https://3.basecampapi.com/3222742/buckets/41106708/todos/9460821589.json "HTTP/1.1 200 OK"
+2026-02-03 14:21:11,859 - httpx - INFO - HTTP Request: GET https://3.basecampapi.com/3222742/buckets/41106708/recordings/9460821589/comments.json "HTTP/1.1 200 OK"
+2026-02-03 14:21:13,194 - httpx - INFO - HTTP Request: GET https://3.basecampapi.com/3222742/buckets/41106708/recordings/9460821589/comments.json?page=2 "HTTP/1.1 200 OK"
+2026-02-03 14:21:14,197 - root - INFO - 📄 Paginated fetch complete: 1 total items from 1 pages
+2026-02-03 14:21:14,531 - httpx - INFO - HTTP Request: GET https://3.basecampapi.com/3222742/buckets/41106708/todos/9521114514.json "HTTP/1.1 200 OK"
+2026-02-03 14:21:15,896 - httpx - INFO - HTTP Request: GET https://3.basecampapi.com/3222742/buckets/41106708/recordings/9521114514/comments.json "HTTP/1.1 200 OK"
+2026-02-03 14:21:17,262 - httpx - INFO - HTTP Request: GET https://3.basecampapi.com/3222742/buckets/41106708/recordings/9521114514/comments.json?page=2 "HTTP/1.1 200 OK"
+2026-02-03 14:21:18,264 - root - INFO - 📄 Paginated fetch complete: 1 total items from 1 pages
+2026-02-03 14:21:18,695 - httpx - INFO - HTTP Request: GET https://3.basecampapi.com/3222742/buckets/41106708/todolists/8335409175.json "HTTP/1.1 200 OK"
+2026-02-03 14:21:20,029 - httpx - INFO - HTTP Request: GET https://3.basecampapi.com/3222742/buckets/41106708/todolists/8335409175/todos.json "HTTP/1.1 200 OK"
+2026-02-03 14:21:21,031 - root - INFO - 📄 Paginated fetch complete: 0 total items from 0 pages
+2026-02-03 14:21:21,386 - httpx - INFO - HTTP Request: GET https://3.basecampapi.com/3222742/buckets/41106708/todolists/8335409169.json "HTTP/1.1 200 OK"
+2026-02-03 14:21:22,704 - httpx - INFO - HTTP Request: GET https://3.basecampapi.com/3222742/buckets/41106708/todolists/8335409169/todos.json "HTTP/1.1 200 OK"
+2026-02-03 14:21:23,706 - root - INFO - 📄 Paginated fetch complete: 0 total items from 0 pages
+2026-02-03 14:21:24,066 - httpx - INFO - HTTP Request: GET https://3.basecampapi.com/3222742/buckets/41106708/todolists/8335409152.json "HTTP/1.1 200 OK"
+2026-02-03 14:21:25,401 - httpx - INFO - HTTP Request: GET https://3.basecampapi.com/3222742/buckets/41106708/todolists/8335409152/todos.json "HTTP/1.1 200 OK"
+2026-02-03 14:21:26,403 - root - INFO - 📄 Paginated fetch complete: 0 total items from 0 pages
+2026-02-03 14:21:26,742 - httpx - INFO - HTTP Request: GET https://3.basecampapi.com/3222742/buckets/41106708/todolists/8335409142.json "HTTP/1.1 200 OK"
+2026-02-03 14:21:28,114 - httpx - INFO - HTTP Request: GET https://3.basecampapi.com/3222742/buckets/41106708/todolists/8335409142/todos.json "HTTP/1.1 200 OK"
+2026-02-03 14:21:29,116 - root - INFO - 📄 Paginated fetch complete: 0 total items from 0 pages
+2026-02-03 14:21:29,492 - httpx - INFO - HTTP Request: GET https://3.basecampapi.com/3222742/buckets/41106708/todolists/8335409157.json "HTTP/1.1 200 OK"
+2026-02-03 14:21:30,880 - httpx - INFO - HTTP Request: GET https://3.basecampapi.com/3222742/buckets/41106708/todolists/8335409157/todos.json "HTTP/1.1 200 OK"

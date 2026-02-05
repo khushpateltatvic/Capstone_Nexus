@@ -1,0 +1,47 @@
+2026-01-29 16:05:56,841 - INFO - 🚀 Starting Comprehensive API Test Suite
+2026-01-29 16:05:56,841 - INFO - Base URL: http://localhost:8000/api/v1
+2026-01-29 16:05:56,841 - INFO - Timestamp: 2026-01-29T16:05:56.841562
+
+2026-01-29 16:05:56,841 - INFO - 
+================================================================================
+2026-01-29 16:05:56,841 - INFO - 1. AUTHENTICATION
+2026-01-29 16:05:56,841 - INFO - ================================================================================
+2026-01-29 16:05:57,376 - INFO - ✅ POST   /auth/login                                        [200] Login successful, token obtained
+2026-01-29 16:05:57,377 - INFO - 
+================================================================================
+2026-01-29 16:05:57,377 - INFO - 2. DISCOVERY ENDPOINTS
+2026-01-29 16:05:57,378 - INFO - ================================================================================
+2026-01-29 16:05:57,454 - INFO - ⚠️ GET    /access/projects                                   [200] No projects found
+2026-01-29 16:05:57,539 - INFO - ⚠️ GET    /access/clients                                    [200] No clients found
+2026-01-29 16:05:57,539 - INFO - 
+================================================================================
+2026-01-29 16:05:57,540 - INFO - 3. PROJECT SECTIONS (FULL CRUD)
+2026-01-29 16:05:57,540 - INFO - ================================================================================
+2026-01-29 16:05:57,540 - WARNING - Skipping Universal Context tests - no project_id available
+2026-01-29 16:05:57,540 - WARNING - Skipping Operations State tests - no project_id available
+2026-01-29 16:05:57,540 - WARNING - Skipping Technical State tests - no project_id available
+2026-01-29 16:05:57,540 - WARNING - Skipping Commercial State tests - no project_id available
+2026-01-29 16:05:57,540 - WARNING - Skipping Strategy State tests - no project_id available
+2026-01-29 16:05:57,540 - WARNING - Skipping Marketing State tests - no project_id available
+2026-01-29 16:05:57,540 - WARNING - Skipping Misc State tests - no project_id available
+2026-01-29 16:05:57,540 - INFO - 
+================================================================================
+2026-01-29 16:05:57,540 - INFO - 4. STAKEHOLDERS & TREE
+2026-01-29 16:05:57,540 - INFO - ================================================================================
+2026-01-29 16:05:57,540 - WARNING - Skipping stakeholder tests - no project_id available
+2026-01-29 16:05:57,541 - INFO - 
+================================================================================
+2026-01-29 16:05:57,541 - INFO - 5. INGESTION & REFRESH
+2026-01-29 16:05:57,541 - INFO - ================================================================================
+2026-01-29 16:05:57,551 - INFO - 
+================================================================================
+2026-01-29 16:05:57,552 - INFO - TEST SUMMARY
+2026-01-29 16:05:57,552 - INFO - ================================================================================
+2026-01-29 16:05:57,552 - INFO - Total Tests: 3
+2026-01-29 16:05:57,552 - INFO - ✅ Passed: 1
+2026-01-29 16:05:57,552 - INFO - ❌ Failed: 0
+2026-01-29 16:05:57,552 - INFO - ⚠️  Warnings: 2
+2026-01-29 16:05:57,552 - INFO - ⏭️  Skipped: 0
+2026-01-29 16:05:57,552 - INFO - Success Rate: 33.3%
+2026-01-29 16:05:57,553 - INFO - 
+📄 Detailed report saved to: test_reports/api_test_report_20260129_160557.json

@@ -1,0 +1,119 @@
+2026-01-29 16:16:35,040 - INFO - 🚀 Starting Comprehensive API Test Suite
+2026-01-29 16:16:35,040 - INFO - Base URL: http://localhost:8000/api/v1
+2026-01-29 16:16:35,040 - INFO - Timestamp: 2026-01-29T16:16:35.040692
+
+2026-01-29 16:16:35,855 - INFO - 📊 Fetched from DB: 2 clients, 4 projects
+2026-01-29 16:16:35,855 - INFO - 
+================================================================================
+2026-01-29 16:16:35,855 - INFO - 1. AUTHENTICATION
+2026-01-29 16:16:35,855 - INFO - ================================================================================
+2026-01-29 16:16:36,142 - INFO - ✅ POST   /auth/login                                        [200] Login successful, token obtained
+2026-01-29 16:16:36,142 - INFO - 
+================================================================================
+2026-01-29 16:16:36,142 - INFO - 2. DISCOVERY ENDPOINTS (Access Control)
+2026-01-29 16:16:36,142 - INFO - ================================================================================
+2026-01-29 16:16:36,207 - INFO - ✅ GET    /access/projects                                   [200] Found 0 accessible projects
+2026-01-29 16:16:36,280 - INFO - ✅ GET    /access/clients                                    [200] Found 0 accessible clients
+2026-01-29 16:16:36,280 - INFO - 
+================================================================================
+2026-01-29 16:16:36,280 - INFO - 3. PROJECT SECTIONS (FULL CRUD)
+2026-01-29 16:16:36,280 - INFO - ================================================================================
+2026-01-29 16:16:36,281 - INFO - Testing with Project ID: 697b38024d54fbbf687c09bb
+2026-01-29 16:16:36,281 - INFO - 
+--- Universal Context ---
+2026-01-29 16:16:36,384 - INFO - ❌ GET    /context/:project_id                               [None] Request failed
+2026-01-29 16:16:36,384 - INFO -   📝 Sending update: {
+  "summary": "Updated Strategic Direction"
+}
+2026-01-29 16:16:36,489 - INFO - ❌ PATCH  /context/:project_id                               [None] Request failed
+2026-01-29 16:16:36,489 - INFO - ⏭️ DELETE /context/:project_id                               [None] Skipped to preserve data
+2026-01-29 16:16:36,489 - INFO - 
+--- Operations State ---
+2026-01-29 16:16:36,590 - INFO - ❌ GET    /ops/:project_id                                   [None] Request failed
+2026-01-29 16:16:36,590 - INFO -   📝 Sending update: {
+  "overall_status": "Amber",
+  "status_reason": "Resource bandwidth constraint"
+}
+2026-01-29 16:16:36,696 - INFO - ❌ PATCH  /ops/:project_id                                   [None] Request failed
+2026-01-29 16:16:36,696 - INFO - ⏭️ DELETE /ops/:project_id                                   [None] Skipped to preserve data
+2026-01-29 16:16:36,697 - INFO - 
+--- Technical State ---
+2026-01-29 16:16:36,798 - INFO - ❌ GET    /tech/:project_id                                  [None] Request failed
+2026-01-29 16:16:36,798 - INFO -   📝 Sending update: {
+  "implementation_log": [
+    "Added new middleware",
+    "Optimized DB Queries"
+  ]
+}
+2026-01-29 16:16:36,915 - INFO - ❌ PATCH  /tech/:project_id                                  [None] Request failed
+2026-01-29 16:16:36,915 - INFO - ⏭️ DELETE /tech/:project_id                                  [None] Skipped to preserve data
+2026-01-29 16:16:36,916 - INFO - 
+--- Commercial State ---
+2026-01-29 16:16:37,027 - INFO - ❌ GET    /comm/:project_id                                  [None] Request failed
+2026-01-29 16:16:37,027 - INFO -   📝 Sending update: {
+  "invoicing_status": "Pending Verification"
+}
+2026-01-29 16:16:37,149 - INFO - ❌ PATCH  /comm/:project_id                                  [None] Request failed
+2026-01-29 16:16:37,149 - INFO - ⏭️ DELETE /comm/:project_id                                  [None] Skipped to preserve data
+2026-01-29 16:16:37,149 - INFO - 
+--- Strategy State ---
+2026-01-29 16:16:37,255 - INFO - ❌ GET    /strat/:project_id                                 [None] Request failed
+2026-01-29 16:16:37,255 - INFO -   📝 Sending update: {
+  "goals": [
+    {
+      "goal": "Reach 100% test coverage",
+      "priority": "High"
+    }
+  ]
+}
+2026-01-29 16:16:37,372 - INFO - ❌ PATCH  /strat/:project_id                                 [None] Request failed
+2026-01-29 16:16:37,372 - INFO - ⏭️ DELETE /strat/:project_id                                 [None] Skipped to preserve data
+2026-01-29 16:16:37,372 - INFO - 
+--- Marketing State ---
+2026-01-29 16:16:37,512 - INFO - ❌ GET    /mktg/:project_id                                  [None] Request failed
+2026-01-29 16:16:37,512 - INFO -   📝 Sending update: {
+  "brand_guidelines": {
+    "primary_color": "#FF5733"
+  }
+}
+2026-01-29 16:16:37,642 - INFO - ❌ PATCH  /mktg/:project_id                                  [None] Request failed
+2026-01-29 16:16:37,642 - INFO - ⏭️ DELETE /mktg/:project_id                                  [None] Skipped to preserve data
+2026-01-29 16:16:37,642 - INFO - 
+--- Misc State ---
+2026-01-29 16:16:37,758 - INFO - ❌ GET    /misc/:project_id                                  [None] Request failed
+2026-01-29 16:16:37,759 - INFO -   📝 Sending update: {
+  "subscriptions": [
+    {
+      "goal": "Monthly Audit",
+      "status": "Active"
+    }
+  ]
+}
+2026-01-29 16:16:37,860 - INFO - ❌ PATCH  /misc/:project_id                                  [None] Request failed
+2026-01-29 16:16:37,860 - INFO - ⏭️ DELETE /misc/:project_id                                  [None] Skipped to preserve data
+2026-01-29 16:16:37,860 - INFO - 
+================================================================================
+2026-01-29 16:16:37,860 - INFO - 4. STAKEHOLDERS & TREE
+2026-01-29 16:16:37,861 - INFO - ================================================================================
+2026-01-29 16:16:37,864 - INFO - 
+================================================================================
+2026-01-29 16:16:37,864 - INFO - 5. INGESTION & REFRESH
+2026-01-29 16:16:37,864 - INFO - ================================================================================
+2026-01-29 16:16:37,864 - INFO -   📤 Upload data: {
+  "text": "Sync update from automated test",
+  "client_id": "697b38024d54fbbf687c09ba",
+  "project_id": "697b38024d54fbbf687c09bb"
+}
+2026-01-29 16:16:37,868 - INFO - ⏭️ POST   /ingest/sync                                       [None] Skipped (long-running operation)
+2026-01-29 16:16:37,869 - INFO - 
+================================================================================
+2026-01-29 16:16:37,869 - INFO - TEST SUMMARY
+2026-01-29 16:16:37,869 - INFO - ================================================================================
+2026-01-29 16:16:37,869 - INFO - Total Tests: 25
+2026-01-29 16:16:37,869 - INFO - ✅ Passed: 3
+2026-01-29 16:16:37,869 - INFO - ❌ Failed: 14
+2026-01-29 16:16:37,869 - INFO - ⚠️  Warnings: 0
+2026-01-29 16:16:37,869 - INFO - ⏭️  Skipped: 8
+2026-01-29 16:16:37,869 - INFO - Success Rate: 12.0%
+2026-01-29 16:16:37,870 - INFO - 
+📄 Detailed report saved to: test_reports/api_test_report_20260129_161637.json

@@ -1,0 +1,454 @@
+2026-02-03 14:49:07,974 - root - INFO - Initialized Gemini embeddings
+2026-02-03 14:49:08,119 - root - INFO - Vector Store Provider: Pinecone (Cloud)
+2026-02-03 14:49:10,339 - root - INFO - Pinecone initialized successfully.
+2026-02-03 14:49:10,753 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:49:13,266 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:49:14,023 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:49:14,681 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:49:15,167 - root - INFO - Querying vector store for section universal_context...
+2026-02-03 14:49:15,457 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:49:16,344 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:49:17,100 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:49:17,913 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:49:18,505 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:49:19,167 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:49:19,537 - root - INFO - Direct query for '[ICICI Lombard] [Marketing Concierge Essential] [MS - T & M]' returned 50 chunks
+2026-02-03 14:49:19,860 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:49:20,515 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:49:21,190 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:49:21,911 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:49:22,605 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:49:23,349 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:49:23,709 - root - INFO - Semantic query returned type: <class 'list'>
+2026-02-03 14:49:23,710 - root - INFO - Re-ranking complete. Top entry score: V:0.6055 + K:0.5000
+2026-02-03 14:49:23,712 - root - INFO - Querying vector store for section operations...
+2026-02-03 14:49:23,932 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:49:24,598 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:49:25,257 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:49:25,990 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:49:26,361 - root - INFO - Direct query for '[ICICI Lombard] [Marketing Concierge Essential] [MS - T & M]' returned 50 chunks
+2026-02-03 14:49:26,729 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:49:27,369 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:49:28,050 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:49:28,698 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:49:29,067 - root - INFO - Semantic query returned type: <class 'list'>
+2026-02-03 14:49:29,068 - root - INFO - Re-ranking complete. Top entry score: V:0.7782 + K:0.5000
+2026-02-03 14:49:29,069 - root - INFO - Querying vector store for section technical...
+2026-02-03 14:49:29,382 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:49:30,103 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:49:30,761 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:49:31,432 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:49:31,869 - root - INFO - Direct query for '[ICICI Lombard] [Marketing Concierge Essential] [MS - T & M]' returned 50 chunks
+2026-02-03 14:49:32,149 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:49:32,763 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:49:33,582 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:49:34,300 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:49:34,691 - root - INFO - Semantic query returned type: <class 'list'>
+2026-02-03 14:49:34,693 - root - INFO - Re-ranking complete. Top entry score: V:0.7358 + K:0.5000
+2026-02-03 14:49:34,695 - root - INFO - Querying vector store for section commercial...
+2026-02-03 14:49:34,922 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:49:35,731 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:49:36,382 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:49:37,069 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:49:37,512 - root - INFO - Direct query for '[ICICI Lombard] [Marketing Concierge Essential] [MS - T & M]' returned 50 chunks
+2026-02-03 14:49:37,785 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:49:38,498 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:49:39,115 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:49:39,745 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:49:40,155 - root - INFO - Semantic query returned type: <class 'list'>
+2026-02-03 14:49:40,156 - root - INFO - Re-ranking complete. Top entry score: V:0.7176 + K:0.5000
+2026-02-03 14:49:40,157 - root - INFO - Querying vector store for section strategy...
+2026-02-03 14:49:40,401 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:49:41,055 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:49:41,698 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:49:42,388 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:49:42,760 - root - INFO - Direct query for '[ICICI Lombard] [Marketing Concierge Essential] [MS - T & M]' returned 50 chunks
+2026-02-03 14:49:43,000 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:49:43,719 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:49:44,335 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:49:44,932 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:49:45,373 - root - INFO - Semantic query returned type: <class 'list'>
+2026-02-03 14:49:45,374 - root - INFO - Re-ranking complete. Top entry score: V:0.7271 + K:0.5000
+2026-02-03 14:49:45,376 - root - INFO - Querying vector store for section marketing...
+2026-02-03 14:49:45,668 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:49:46,284 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:49:46,860 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:49:47,443 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:49:47,854 - root - INFO - Direct query for '[ICICI Lombard] [Marketing Concierge Essential] [MS - T & M]' returned 50 chunks
+2026-02-03 14:49:48,122 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:49:48,717 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:49:49,330 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:49:49,929 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:49:50,431 - root - INFO - Semantic query returned type: <class 'list'>
+2026-02-03 14:49:50,433 - root - INFO - Re-ranking complete. Top entry score: V:0.7411 + K:0.5000
+2026-02-03 14:49:50,519 - root - INFO - [test:41106708] Extracting universal_context & operations...
+2026-02-03 14:49:50,519 - root - INFO - Querying vector store for section universal_context...
+2026-02-03 14:49:50,740 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:49:51,399 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:49:52,012 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:49:52,667 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:49:53,351 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:49:54,067 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:49:54,502 - root - INFO - Direct query for '[ICICI Lombard] [Marketing Concierge Essential] [MS - T & M]' returned 50 chunks
+2026-02-03 14:49:54,711 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:49:55,394 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:49:56,115 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:49:56,839 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:49:57,546 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:49:58,189 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:49:58,701 - root - INFO - Semantic query returned type: <class 'list'>
+2026-02-03 14:49:58,702 - root - INFO - Re-ranking complete. Top entry score: V:0.6055 + K:0.5000
+2026-02-03 14:49:58,702 - root - INFO - Querying vector store for section operations...
+2026-02-03 14:49:58,978 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:49:59,638 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:50:00,307 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:50:01,026 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:50:01,457 - root - INFO - Direct query for '[ICICI Lombard] [Marketing Concierge Essential] [MS - T & M]' returned 50 chunks
+2026-02-03 14:50:01,679 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:50:02,354 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:50:03,002 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:50:03,627 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:50:04,014 - root - INFO - Semantic query returned type: <class 'list'>
+2026-02-03 14:50:04,016 - root - INFO - Re-ranking complete. Top entry score: V:0.7782 + K:0.5000
+2026-02-03 14:50:04,016 - root - INFO - [historian] Selected Kimi 10k (Available Capacity)
+2026-02-03 14:50:04,016 - root - INFO - [historian] Routing 21236 chars (~5309 toks) to Kimi 10k
+2026-02-03 14:50:14,498 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-03 14:50:14,533 - root - INFO - [RAG] Historian extracted: ['_thinking', 'project_name', 'account_summary', 'engagement_type', 'client_profile', 'internal_squad', 'poc_updates', 'timeline_events', 'communication_hygiene', 'important_notes', 'google_workspace', 'health_score', 'health_reasoning']
+2026-02-03 14:50:14,533 - root - INFO - [pm] Selected Maverick 6k (Available Capacity)
+2026-02-03 14:50:14,533 - root - INFO - [pm] Routing 14304 chars (~3576 toks) to Maverick 6k
+2026-02-03 14:50:17,708 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-03 14:50:17,714 - root - INFO - [RAG] PM extracted: ['_thinking', 'traffic_light', 'traffic_light_reason', 'task_board_upcoming', 'task_board_ongoing', 'blockers', 'recent_interactions', 'engagement_status', 'feedback']
+2026-02-03 14:50:17,714 - root - INFO - [test:41106708] Extracting technical...
+2026-02-03 14:50:17,714 - root - INFO - Querying vector store for section technical...
+2026-02-03 14:50:18,022 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:50:18,704 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:50:19,459 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:50:20,172 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:50:20,537 - root - INFO - Direct query for '[ICICI Lombard] [Marketing Concierge Essential] [MS - T & M]' returned 50 chunks
+2026-02-03 14:50:20,747 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:50:21,422 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:50:22,121 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:50:22,733 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:50:23,087 - root - INFO - Semantic query returned type: <class 'list'>
+2026-02-03 14:50:23,088 - root - INFO - Re-ranking complete. Top entry score: V:0.7358 + K:0.5000
+2026-02-03 14:50:23,089 - root - INFO - [tech_lead] Selected Kimi 10k (Available Capacity)
+2026-02-03 14:50:23,089 - root - INFO - [tech_lead] Routing 13410 chars (~3352 toks) to Kimi 10k
+2026-02-03 14:50:23,290 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-02-03 14:50:23,291 - groq._base_client - INFO - Retrying request to /openai/v1/chat/completions in 4.000000 seconds
+2026-02-03 14:50:31,748 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-03 14:50:31,752 - root - INFO - [RAG] Tech Lead extracted: ['_thinking', 'tech_stack_updates', 'access_credentials', 'implementation_log', 'experiment_results', 'technical_notes']
+2026-02-03 14:50:31,752 - root - INFO - [test:41106708] Extracting commercial...
+2026-02-03 14:50:31,752 - root - INFO - Querying vector store for section commercial...
+2026-02-03 14:50:32,053 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:50:32,815 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:50:33,491 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:50:34,100 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:50:34,466 - root - INFO - Direct query for '[ICICI Lombard] [Marketing Concierge Essential] [MS - T & M]' returned 50 chunks
+2026-02-03 14:50:34,714 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:50:35,327 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:50:36,145 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:50:36,778 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:50:37,188 - root - INFO - Semantic query returned type: <class 'list'>
+2026-02-03 14:50:37,189 - root - INFO - Re-ranking complete. Top entry score: V:0.7176 + K:0.5000
+2026-02-03 14:50:37,189 - root - INFO - [auditor] Selected Kimi-0905 10k (Available Capacity)
+2026-02-03 14:50:37,189 - root - INFO - [auditor] Routing 14218 chars (~3554 toks) to Kimi-0905 10k
+2026-02-03 14:50:40,037 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-03 14:50:40,040 - root - INFO - [RAG] Auditor extracted: ['_thinking', 'sow_data', 'financial_overview', 'invoices', 'upcoming_renewals', 'revenue_channels', 'confidence']
+2026-02-03 14:50:40,040 - root - INFO - [test:41106708] Extracting strategy...
+2026-02-03 14:50:40,040 - root - INFO - Querying vector store for section strategy...
+2026-02-03 14:50:40,345 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:50:40,982 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:50:41,626 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:50:42,218 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:50:42,575 - root - INFO - Direct query for '[ICICI Lombard] [Marketing Concierge Essential] [MS - T & M]' returned 50 chunks
+2026-02-03 14:50:42,787 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:50:43,417 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:50:43,985 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:50:44,573 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:50:44,937 - root - INFO - Semantic query returned type: <class 'list'>
+2026-02-03 14:50:44,938 - root - INFO - Re-ranking complete. Top entry score: V:0.7271 + K:0.5000
+2026-02-03 14:50:44,938 - root - INFO - Querying vector store for section marketing...
+2026-02-03 14:50:45,166 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:50:45,976 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:50:46,594 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:50:47,185 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:50:47,546 - root - INFO - Direct query for '[ICICI Lombard] [Marketing Concierge Essential] [MS - T & M]' returned 50 chunks
+2026-02-03 14:50:47,759 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:50:48,717 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:50:49,355 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:50:50,033 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:50:50,502 - root - INFO - Semantic query returned type: <class 'list'>
+2026-02-03 14:50:50,503 - root - INFO - Re-ranking complete. Top entry score: V:0.7411 + K:0.5000
+2026-02-03 14:50:50,504 - root - INFO - [strategist] Selected Kimi-0905 10k (Available Capacity)
+2026-02-03 14:50:50,504 - root - INFO - [strategist] Routing 23823 chars (~5955 toks) to Kimi-0905 10k
+2026-02-03 14:50:50,682 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-02-03 14:50:50,683 - groq._base_client - INFO - Retrying request to /openai/v1/chat/completions in 9.000000 seconds
+2026-02-03 14:51:04,102 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-03 14:51:04,106 - root - INFO - [RAG] Strategist extracted: ['_thinking', 'stakeholder_map', 'goals_roadmap', 'upsell_opportunities', 'competitors', 'ecosystem', 'brand_guidelines', 'success_stories', 'testimonials', 'public_references']
+2026-02-03 14:51:04,107 - root - INFO - Starting deep reduction and persistence... (State type: <class 'dict'>)
+2026-02-03 14:51:04,133 - app.services.ingestion.basecamp - INFO - === BASECAMP SERVICE INITIALIZATION ===
+2026-02-03 14:51:04,133 - app.services.ingestion.basecamp - INFO - ENABLE_BASECAMP: True
+2026-02-03 14:51:04,133 - app.services.ingestion.basecamp - INFO - BASECAMP_ACCESS_TOKEN: SET
+2026-02-03 14:51:04,134 - app.services.ingestion.basecamp - INFO - BASECAMP_ACCOUNT_ID: 3222742
+2026-02-03 14:51:04,134 - app.services.ingestion.basecamp - INFO - BASECAMP_USER_AGENT: Basecamp Full Export (parshwa@tatvic.com)
+2026-02-03 14:51:04,134 - app.services.ingestion.basecamp - INFO - BASECAMP_PROJECT_IDS: 41106708,37845892,37425961,14694380
+2026-02-03 14:51:04,134 - app.services.ingestion.basecamp - INFO - ✅ Basecamp service ENABLED with 4 projects: ['41106708', '37845892', '37425961', '14694380']
+2026-02-03 14:51:04,134 - app.services.ingestion.basecamp - INFO - Account ID: 3222742
+2026-02-03 14:51:04,134 - app.services.ingestion.basecamp - INFO - Base URL: https://3.basecampapi.com
+2026-02-03 14:51:04,135 - app.services.ingestion.basecamp - INFO - === END BASECAMP INITIALIZATION ===
+2026-02-03 14:51:04,135 - app.services.ingestion.basecamp - INFO - 
+2026-02-03 14:51:05,103 - app.services.ingestion.basecamp - ERROR - ❌ Error getting last sync time for 41106708: 'NoneType' object has no attribute 'basecamp_sync_state'
+2026-02-03 14:51:05,740 - httpx - INFO - HTTP Request: GET https://3.basecampapi.com/3222742/projects/41106708.json "HTTP/1.1 200 OK"
+2026-02-03 14:51:06,742 - app.services.ingestion.basecamp - ERROR - ❌ Error getting last sync time for 37845892: 'NoneType' object has no attribute 'basecamp_sync_state'
+2026-02-03 14:51:07,217 - httpx - INFO - HTTP Request: GET https://3.basecampapi.com/3222742/projects/37845892.json "HTTP/1.1 200 OK"
+2026-02-03 14:51:08,219 - app.services.ingestion.basecamp - ERROR - ❌ Error getting last sync time for 37425961: 'NoneType' object has no attribute 'basecamp_sync_state'
+2026-02-03 14:51:08,813 - httpx - INFO - HTTP Request: GET https://3.basecampapi.com/3222742/projects/37425961.json "HTTP/1.1 200 OK"
+2026-02-03 14:51:09,815 - app.services.ingestion.basecamp - ERROR - ❌ Error getting last sync time for 14694380: 'NoneType' object has no attribute 'basecamp_sync_state'
+2026-02-03 14:51:10,321 - httpx - INFO - HTTP Request: GET https://3.basecampapi.com/3222742/projects/14694380.json "HTTP/1.1 200 OK"
+2026-02-03 14:55:10,837 - root - INFO - Database not connected, connecting now...
+2026-02-03 14:55:10,838 - root - INFO - Connecting to MongoDB...
+2026-02-03 14:55:10,842 - root - INFO - Connected to MongoDB.
+2026-02-03 14:55:18,087 - root - INFO - Initialized Gemini embeddings
+2026-02-03 14:55:18,167 - root - INFO - Vector Store Provider: Pinecone (Cloud)
+2026-02-03 14:55:19,975 - root - INFO - Pinecone initialized successfully.
+2026-02-03 14:55:20,300 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:55:22,503 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:55:23,502 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:55:24,193 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:55:24,617 - root - INFO - Querying vector store for section universal_context...
+2026-02-03 14:55:24,908 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:55:25,834 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:55:26,546 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:55:27,265 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:55:27,882 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:55:28,520 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:55:28,936 - root - INFO - Direct query for '[ICICI Lombard] [Marketing Concierge Essential] [MS - T & M]' returned 50 chunks
+2026-02-03 14:55:29,211 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:55:29,926 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:55:30,503 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:55:31,359 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:55:31,966 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:55:32,627 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:55:33,019 - root - INFO - Semantic query returned type: <class 'list'>
+2026-02-03 14:55:33,020 - root - INFO - Re-ranking complete. Top entry score: V:0.6055 + K:0.5000
+2026-02-03 14:55:33,021 - root - INFO - Querying vector store for section operations...
+2026-02-03 14:55:33,233 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:55:33,921 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:55:34,637 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:55:35,354 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:55:35,714 - root - INFO - Direct query for '[ICICI Lombard] [Marketing Concierge Essential] [MS - T & M]' returned 50 chunks
+2026-02-03 14:55:35,968 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:55:36,686 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:55:37,337 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:55:38,016 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:55:38,442 - root - INFO - Semantic query returned type: <class 'list'>
+2026-02-03 14:55:38,443 - root - INFO - Re-ranking complete. Top entry score: V:0.7782 + K:0.5000
+2026-02-03 14:55:38,444 - root - INFO - Querying vector store for section technical...
+2026-02-03 14:55:38,731 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:55:39,347 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:55:40,068 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:55:40,713 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:55:41,107 - root - INFO - Direct query for '[ICICI Lombard] [Marketing Concierge Essential] [MS - T & M]' returned 50 chunks
+2026-02-03 14:55:41,361 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:55:42,014 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:55:42,598 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:55:43,340 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:55:43,770 - root - INFO - Semantic query returned type: <class 'list'>
+2026-02-03 14:55:43,771 - root - INFO - Re-ranking complete. Top entry score: V:0.7358 + K:0.5000
+2026-02-03 14:55:43,772 - root - INFO - Querying vector store for section commercial...
+2026-02-03 14:55:44,161 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:55:44,773 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:55:45,389 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:55:46,001 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:55:46,433 - root - INFO - Direct query for '[ICICI Lombard] [Marketing Concierge Essential] [MS - T & M]' returned 50 chunks
+2026-02-03 14:55:46,723 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:55:47,335 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:55:48,050 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:55:48,667 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:55:49,058 - root - INFO - Semantic query returned type: <class 'list'>
+2026-02-03 14:55:49,058 - root - INFO - Re-ranking complete. Top entry score: V:0.7176 + K:0.5000
+2026-02-03 14:55:49,059 - root - INFO - Querying vector store for section strategy...
+2026-02-03 14:55:49,382 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:55:50,099 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:55:50,818 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:55:51,501 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:55:51,860 - root - INFO - Direct query for '[ICICI Lombard] [Marketing Concierge Essential] [MS - T & M]' returned 50 chunks
+2026-02-03 14:55:52,146 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:55:52,761 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:55:53,335 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:55:54,093 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:55:54,520 - root - INFO - Semantic query returned type: <class 'list'>
+2026-02-03 14:55:54,521 - root - INFO - Re-ranking complete. Top entry score: V:0.7271 + K:0.5000
+2026-02-03 14:55:54,522 - root - INFO - Querying vector store for section marketing...
+2026-02-03 14:55:54,816 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:55:55,490 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:55:56,144 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:55:56,771 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:55:57,197 - root - INFO - Direct query for '[ICICI Lombard] [Marketing Concierge Essential] [MS - T & M]' returned 50 chunks
+2026-02-03 14:55:57,420 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:55:58,005 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:55:58,590 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:55:59,252 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:55:59,613 - root - INFO - Semantic query returned type: <class 'list'>
+2026-02-03 14:55:59,613 - root - INFO - Re-ranking complete. Top entry score: V:0.7411 + K:0.5000
+2026-02-03 14:55:59,686 - root - INFO - [test:41106708] Extracting universal_context & operations...
+2026-02-03 14:55:59,687 - root - INFO - Querying vector store for section universal_context...
+2026-02-03 14:55:59,937 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:56:00,759 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:56:01,413 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:56:02,035 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:56:02,634 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:56:03,258 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:56:03,638 - root - INFO - Direct query for '[ICICI Lombard] [Marketing Concierge Essential] [MS - T & M]' returned 50 chunks
+2026-02-03 14:56:03,856 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:56:04,539 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:56:05,157 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:56:05,730 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:56:06,485 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:56:07,122 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:56:07,521 - root - INFO - Semantic query returned type: <class 'list'>
+2026-02-03 14:56:07,522 - root - INFO - Re-ranking complete. Top entry score: V:0.6055 + K:0.5000
+2026-02-03 14:56:07,523 - root - INFO - Querying vector store for section operations...
+2026-02-03 14:56:07,825 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:56:08,533 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:56:09,247 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:56:09,862 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:56:10,289 - root - INFO - Direct query for '[ICICI Lombard] [Marketing Concierge Essential] [MS - T & M]' returned 50 chunks
+2026-02-03 14:56:10,576 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:56:11,295 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:56:11,909 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:56:12,628 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:56:13,053 - root - INFO - Semantic query returned type: <class 'list'>
+2026-02-03 14:56:13,054 - root - INFO - Re-ranking complete. Top entry score: V:0.7782 + K:0.5000
+2026-02-03 14:56:13,054 - root - INFO - [historian] Selected Kimi 10k (Available Capacity)
+2026-02-03 14:56:13,054 - root - INFO - [historian] Routing 21236 chars (~5309 toks) to Kimi 10k
+2026-02-03 14:56:13,364 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 403 Forbidden"
+2026-02-03 14:56:15,369 - root - INFO - [historian] Selected Kimi-0905 10k (Available Capacity)
+2026-02-03 14:56:15,369 - root - INFO - [historian] Routing 21236 chars (~5309 toks) to Kimi-0905 10k
+2026-02-03 14:56:15,544 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 403 Forbidden"
+2026-02-03 14:56:19,550 - root - INFO - [historian] Selected Llama 8B 14k (Available Capacity)
+2026-02-03 14:56:19,551 - root - INFO - [historian] Routing 21236 chars (~5309 toks) to Llama 8B 14k
+2026-02-03 14:56:19,747 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 403 Forbidden"
+2026-02-03 14:56:27,750 - root - INFO - [historian] Selected Llama 8B 14k (Available Capacity)
+2026-02-03 14:56:27,750 - root - INFO - [historian] Routing 21236 chars (~5309 toks) to Llama 8B 14k
+2026-02-03 14:56:27,958 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 403 Forbidden"
+2026-02-03 14:56:27,960 - root - ERROR - [historian] Final Failure: Error code: 403 - {'error': {'message': 'The model `llama-3.1-8b-instant` is blocked at the organization level. Please have the org admin enable this model in the org settings at https://console.groq.com/settings/limits', 'type': 'permissions_error', 'code': 'model_permission_blocked_org'}}
+2026-02-03 14:56:27,960 - root - INFO - [RAG] Historian extracted: []
+2026-02-03 14:56:27,960 - root - INFO - [pm] Selected Maverick 6k (Available Capacity)
+2026-02-03 14:56:27,960 - root - INFO - [pm] Routing 14304 chars (~3576 toks) to Maverick 6k
+2026-02-03 14:56:32,168 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-03 14:56:32,199 - root - INFO - [RAG] PM extracted: ['_thinking', 'traffic_light', 'traffic_light_reason', 'task_board_upcoming', 'task_board_ongoing', 'blockers', 'recent_interactions', 'engagement_status', 'feedback']
+2026-02-03 14:56:32,199 - root - INFO - [test:41106708] Extracting technical...
+2026-02-03 14:56:32,199 - root - INFO - Querying vector store for section technical...
+2026-02-03 14:56:32,504 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:56:33,110 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:56:33,928 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:56:34,540 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:56:34,968 - root - INFO - Direct query for '[ICICI Lombard] [Marketing Concierge Essential] [MS - T & M]' returned 50 chunks
+2026-02-03 14:56:35,256 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:56:35,821 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:56:36,485 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:56:37,100 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:56:37,531 - root - INFO - Semantic query returned type: <class 'list'>
+2026-02-03 14:56:37,532 - root - INFO - Re-ranking complete. Top entry score: V:0.7358 + K:0.5000
+2026-02-03 14:56:37,532 - root - INFO - [tech_lead] Selected Kimi 10k (Available Capacity)
+2026-02-03 14:56:37,532 - root - INFO - [tech_lead] Routing 13410 chars (~3352 toks) to Kimi 10k
+2026-02-03 14:56:37,696 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 403 Forbidden"
+2026-02-03 14:56:39,700 - root - INFO - [tech_lead] Selected Kimi-0905 10k (Available Capacity)
+2026-02-03 14:56:39,700 - root - INFO - [tech_lead] Routing 13410 chars (~3352 toks) to Kimi-0905 10k
+2026-02-03 14:56:55,275 - groq._base_client - INFO - Retrying request to /openai/v1/chat/completions in 0.424093 seconds
+2026-02-03 14:56:55,798 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 403 Forbidden"
+2026-02-03 14:56:59,804 - root - INFO - [tech_lead] Selected Llama 8B 14k (Available Capacity)
+2026-02-03 14:56:59,804 - root - INFO - [tech_lead] Routing 13410 chars (~3352 toks) to Llama 8B 14k
+2026-02-03 14:56:59,959 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 403 Forbidden"
+2026-02-03 14:57:07,969 - root - INFO - [tech_lead] Selected Scout 30k (Available Capacity)
+2026-02-03 14:57:07,969 - root - INFO - [tech_lead] Routing 13410 chars (~3352 toks) to Scout 30k
+2026-02-03 14:57:09,868 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-03 14:57:09,872 - root - INFO - [RAG] Tech Lead extracted: ['_thinking', 'tech_stack_updates', 'access_credentials', 'implementation_log', 'experiment_results', 'technical_notes']
+2026-02-03 14:57:09,872 - root - INFO - [test:41106708] Extracting commercial...
+2026-02-03 14:57:09,873 - root - INFO - Querying vector store for section commercial...
+2026-02-03 14:57:10,172 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:57:10,890 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:57:11,550 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:57:12,224 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:57:12,578 - root - INFO - Direct query for '[ICICI Lombard] [Marketing Concierge Essential] [MS - T & M]' returned 50 chunks
+2026-02-03 14:57:12,791 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:57:13,372 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:57:14,086 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:57:14,747 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:57:15,103 - root - INFO - Semantic query returned type: <class 'list'>
+2026-02-03 14:57:15,104 - root - INFO - Re-ranking complete. Top entry score: V:0.7176 + K:0.5000
+2026-02-03 14:57:15,104 - root - INFO - [auditor] Selected Kimi 10k (Available Capacity)
+2026-02-03 14:57:15,104 - root - INFO - [auditor] Routing 14218 chars (~3554 toks) to Kimi 10k
+2026-02-03 14:57:15,300 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 403 Forbidden"
+2026-02-03 14:57:17,304 - root - INFO - [auditor] Selected Kimi-0905 10k (Available Capacity)
+2026-02-03 14:57:17,304 - root - INFO - [auditor] Routing 14218 chars (~3554 toks) to Kimi-0905 10k
+2026-02-03 14:57:17,471 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 403 Forbidden"
+2026-02-03 14:57:21,477 - root - INFO - [auditor] Selected Llama 8B 14k (Available Capacity)
+2026-02-03 14:57:21,477 - root - INFO - [auditor] Routing 14218 chars (~3554 toks) to Llama 8B 14k
+2026-02-03 14:57:21,643 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 403 Forbidden"
+2026-02-03 14:57:29,651 - root - INFO - [auditor] Selected Maverick 6k (Available Capacity)
+2026-02-03 14:57:29,652 - root - INFO - [auditor] Routing 14218 chars (~3554 toks) to Maverick 6k
+2026-02-03 14:57:32,604 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-03 14:57:32,607 - root - INFO - [RAG] Auditor extracted: ['_thinking', 'sow_data', 'financial_overview', 'invoices', 'upcoming_renewals', 'revenue_channels', 'confidence']
+2026-02-03 14:57:32,607 - root - INFO - [test:41106708] Extracting strategy...
+2026-02-03 14:57:32,607 - root - INFO - Querying vector store for section strategy...
+2026-02-03 14:57:32,915 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:57:33,554 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:57:34,237 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:57:34,862 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:57:35,285 - root - INFO - Direct query for '[ICICI Lombard] [Marketing Concierge Essential] [MS - T & M]' returned 50 chunks
+2026-02-03 14:57:35,498 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:57:36,083 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:57:36,797 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:57:37,518 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:57:37,940 - root - INFO - Semantic query returned type: <class 'list'>
+2026-02-03 14:57:37,941 - root - INFO - Re-ranking complete. Top entry score: V:0.7271 + K:0.5000
+2026-02-03 14:57:37,941 - root - INFO - Querying vector store for section marketing...
+2026-02-03 14:57:38,239 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:57:38,846 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:57:39,463 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:57:40,484 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:57:41,064 - root - INFO - Direct query for '[ICICI Lombard] [Marketing Concierge Essential] [MS - T & M]' returned 50 chunks
+2026-02-03 14:57:41,519 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:57:42,542 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:57:43,147 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:57:43,729 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-03 14:57:44,187 - root - INFO - Semantic query returned type: <class 'list'>
+2026-02-03 14:57:44,188 - root - INFO - Re-ranking complete. Top entry score: V:0.7411 + K:0.5000
+2026-02-03 14:57:44,188 - root - INFO - [strategist] Selected Kimi 10k (Available Capacity)
+2026-02-03 14:57:44,189 - root - INFO - [strategist] Routing 23823 chars (~5955 toks) to Kimi 10k
+2026-02-03 14:57:44,359 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 403 Forbidden"
+2026-02-03 14:57:46,363 - root - INFO - [strategist] Selected Kimi-0905 10k (Available Capacity)
+2026-02-03 14:57:46,363 - root - INFO - [strategist] Routing 23823 chars (~5955 toks) to Kimi-0905 10k
+2026-02-03 14:57:46,547 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 403 Forbidden"
+2026-02-03 14:57:50,552 - root - INFO - [strategist] Selected Llama 8B 14k (Available Capacity)
+2026-02-03 14:57:50,552 - root - INFO - [strategist] Routing 23823 chars (~5955 toks) to Llama 8B 14k
+2026-02-03 14:57:50,719 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 403 Forbidden"
+2026-02-03 14:57:58,728 - root - INFO - [strategist] Selected Scout 30k (Available Capacity)
+2026-02-03 14:57:58,728 - root - INFO - [strategist] Routing 23823 chars (~5955 toks) to Scout 30k
+2026-02-03 14:58:00,788 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-03 14:58:00,791 - root - INFO - [RAG] Strategist extracted: ['_thinking', 'stakeholder_map', 'goals_roadmap', 'upsell_opportunities', 'competitors', 'ecosystem', 'brand_guidelines', 'success_stories', 'testimonials', 'public_references']
+2026-02-03 14:58:00,791 - root - INFO - Starting deep reduction and persistence... (State type: <class 'dict'>)
+2026-02-03 14:58:01,416 - root - INFO - Final update_ops keys for 41106708: ['updated_at', 'created_at', 'universal_context.poc_map', 'operations.traffic_light', 'operations.task_board_upcoming', 'operations.task_board_ongoing', 'operations.recent_interactions', 'operations.engagement_status', 'technical.tech_stack', 'technical.access_credentials', 'technical.implementation_log', 'commercial.active_sow', 'commercial.financial_overview', 'commercial.revenue_channels', 'strategy.stakeholder_map', 'strategy.goals_roadmap', 'strategy.competitors', 'strategy.ecosystem']
+2026-02-03 14:58:01,435 - root - INFO - Updated 18 fields for project 41106708
+2026-02-03 14:58:01,464 - app.services.ingestion.basecamp - INFO - === BASECAMP SERVICE INITIALIZATION ===
+2026-02-03 14:58:01,464 - app.services.ingestion.basecamp - INFO - ENABLE_BASECAMP: True
+2026-02-03 14:58:01,465 - app.services.ingestion.basecamp - INFO - BASECAMP_ACCESS_TOKEN: SET
+2026-02-03 14:58:01,465 - app.services.ingestion.basecamp - INFO - BASECAMP_ACCOUNT_ID: 3222742
+2026-02-03 14:58:01,465 - app.services.ingestion.basecamp - INFO - BASECAMP_USER_AGENT: Basecamp Full Export (parshwa@tatvic.com)
+2026-02-03 14:58:01,465 - app.services.ingestion.basecamp - INFO - BASECAMP_PROJECT_IDS: 41106708,37845892,37425961,14694380
+2026-02-03 14:58:01,465 - app.services.ingestion.basecamp - INFO - ✅ Basecamp service ENABLED with 4 projects: ['41106708', '37845892', '37425961', '14694380']
+2026-02-03 14:58:01,465 - app.services.ingestion.basecamp - INFO - Account ID: 3222742
+2026-02-03 14:58:01,466 - app.services.ingestion.basecamp - INFO - Base URL: https://3.basecampapi.com
+2026-02-03 14:58:01,466 - app.services.ingestion.basecamp - INFO - === END BASECAMP INITIALIZATION ===
+2026-02-03 14:58:01,466 - app.services.ingestion.basecamp - INFO - 
+2026-02-03 14:58:02,335 - app.services.ingestion.basecamp - INFO - 📅 Last sync for 41106708: 2026-02-03T09:24:54.723900+00:00
+2026-02-03 14:58:02,984 - httpx - INFO - HTTP Request: GET https://3.basecampapi.com/3222742/projects/41106708.json "HTTP/1.1 200 OK"
+2026-02-03 14:58:04,000 - app.services.ingestion.basecamp - INFO - 📅 Last sync for 37845892: 2026-02-03T08:57:45.106519+00:00
+2026-02-03 14:58:04,501 - httpx - INFO - HTTP Request: GET https://3.basecampapi.com/3222742/projects/37845892.json "HTTP/1.1 200 OK"
+2026-02-03 14:58:05,536 - app.services.ingestion.basecamp - INFO - 📅 Last sync for 37425961: 2026-02-03T09:00:21.323361+00:00
+2026-02-03 14:58:06,045 - httpx - INFO - HTTP Request: GET https://3.basecampapi.com/3222742/projects/37425961.json "HTTP/1.1 200 OK"
+2026-02-03 14:58:07,064 - app.services.ingestion.basecamp - INFO - 📅 Last sync for 14694380: 2026-02-03T09:04:30.462990+00:00
+2026-02-03 14:58:22,565 - app.services.ingestion.basecamp - ERROR - 🌐 Request error for https://3.basecampapi.com/3222742/projects/14694380.json: 
+2026-02-03 14:58:28,101 - httpx - INFO - HTTP Request: GET https://3.basecampapi.com/3222742/projects/14694380.json "HTTP/1.1 200 OK"

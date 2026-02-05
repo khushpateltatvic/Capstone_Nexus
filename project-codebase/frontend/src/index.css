@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 260 60% 20%;
+    --card: 0 0% 100%;
+    --card-foreground: 260 60% 20%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 260 60% 20%;
+    --primary: 258 63% 28%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 180 100% 38%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 240 10% 96%;
+    --muted-foreground: 260 20% 45%;
+    --accent: 42 100% 50%;
+    --accent-foreground: 260 60% 20%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 10% 90%;
+    --input: 240 10% 90%;
+    --ring: 258 63% 28%;
+    --radius: 0.75rem;
+    --sidebar-background: 258 63% 15%;
+    --sidebar-foreground: 0 0% 100%;
+    --sidebar-primary: 180 100% 38%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 258 50% 25%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 258 50% 25%;
+    --sidebar-ring: 180 100% 38%;
+    
+    /* Nexus Brand Colors */
+    --nexus-primary: #321a75;
+    --nexus-secondary: #00c3c4;
+    --nexus-accent: #faab00;
+    --nexus-success: #10b981;
+    --nexus-warning: #f59e0b;
+    --nexus-danger: #ef4444;
+    --nexus-info: #3b82f6;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+}
+
+@layer utilities {
+  .gradient-primary {
+    background: linear-gradient(135deg, var(--nexus-primary) 0%, #4a2d99 100%);
+  }
+  
+  .gradient-secondary {
+    background: linear-gradient(135deg, var(--nexus-secondary) 0%, #00e5e6 100%);
+  }
+  
+  .gradient-accent {
+    background: linear-gradient(135deg, var(--nexus-accent) 0%, #ffc94d 100%);
+  }
+  
+  .glass-effect {
+    backdrop-filter: blur(12px);
+    background: rgba(255, 255, 255, 0.85);
+  }
+  
+  .card-shadow {
+    box-shadow: 0 4px 20px rgba(50, 26, 117, 0.08), 0 1px 4px rgba(0, 0, 0, 0.04);
+  }
+  
+  .card-shadow-hover {
+    box-shadow: 0 8px 30px rgba(50, 26, 117, 0.12), 0 2px 8px rgba(0, 0, 0, 0.06);
+  }
+  
+  .text-gradient {
+    background: linear-gradient(135deg, var(--nexus-primary) 0%, var(--nexus-secondary) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  .border-gradient {
+    border: 2px solid transparent;
+    background: linear-gradient(white, white) padding-box,
+                linear-gradient(135deg, var(--nexus-primary), var(--nexus-secondary)) border-box;
+  }
+  
+  .animate-pulse-slow {
+    animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+  
+  .scrollbar-thin {
+    scrollbar-width: thin;
+    scrollbar-color: var(--nexus-primary) transparent;
+  }
+  
+  .scrollbar-thin::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  
+  .scrollbar-thin::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+    background-color: rgba(50, 26, 117, 0.3);
+    border-radius: 3px;
+  }
+  
+  .scrollbar-thin::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(50, 26, 117, 0.5);
+  }
+}
+
+/* Custom animations */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-slide-in {
+  animation: slideIn 0.3s ease-out forwards;
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.3s ease-out forwards;
+}
+
+.animate-scale-in {
+  animation: scaleIn 0.2s ease-out forwards;
+}
+
+/* Status indicators */
+.status-red {
+  @apply bg-red-500 text-white;
+}
+
+.status-yellow {
+  @apply bg-amber-500 text-white;
+}
+
+.status-green {
+  @apply bg-emerald-500 text-white;
+}
+
+/* Module section styling */
+.module-section {
+  @apply rounded-xl border border-slate-200/60 bg-white card-shadow transition-all duration-300;
+}
+
+.module-section:hover {
+  @apply card-shadow-hover;
+}
+
+.module-header {
+  @apply flex items-center justify-between px-6 py-4 border-b border-slate-100 cursor-pointer;
+}
+
+.module-content {
+  @apply p-6;
+}

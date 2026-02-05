@@ -1,0 +1,61 @@
+2026-02-03 14:28:02,369 - root - INFO - Initialized Gemini embeddings
+2026-02-03 14:28:02,418 - root - INFO - Vector Store Provider: Pinecone (Cloud)
+2026-02-03 14:28:48,234 - root - INFO - Initialized Gemini embeddings
+2026-02-03 14:28:48,284 - root - INFO - Vector Store Provider: Pinecone (Cloud)
+2026-02-03 14:28:48,297 - app.services.ingestion.basecamp - INFO - === BASECAMP SERVICE INITIALIZATION ===
+2026-02-03 14:28:48,297 - app.services.ingestion.basecamp - INFO - ENABLE_BASECAMP: True
+2026-02-03 14:28:48,297 - app.services.ingestion.basecamp - INFO - BASECAMP_ACCESS_TOKEN: SET
+2026-02-03 14:28:48,297 - app.services.ingestion.basecamp - INFO - BASECAMP_ACCOUNT_ID: 3222742
+2026-02-03 14:28:48,297 - app.services.ingestion.basecamp - INFO - BASECAMP_USER_AGENT: Basecamp Full Export (parshwa@tatvic.com)
+2026-02-03 14:28:48,297 - app.services.ingestion.basecamp - INFO - BASECAMP_PROJECT_IDS: 41106708,37845892,37425961,14694380
+2026-02-03 14:28:48,297 - app.services.ingestion.basecamp - INFO - ✅ Basecamp service ENABLED with 4 projects: ['41106708', '37845892', '37425961', '14694380']
+2026-02-03 14:28:48,297 - app.services.ingestion.basecamp - INFO - Account ID: 3222742
+2026-02-03 14:28:48,297 - app.services.ingestion.basecamp - INFO - Base URL: https://3.basecampapi.com
+2026-02-03 14:28:48,297 - app.services.ingestion.basecamp - INFO - === END BASECAMP INITIALIZATION ===
+2026-02-03 14:28:48,298 - app.services.ingestion.basecamp - INFO - 
+2026-02-03 14:28:49,736 - app.services.ingestion.basecamp - ERROR - ❌ Error getting last sync time for 41106708: 'NoneType' object has no attribute 'basecamp_sync_state'
+2026-02-03 14:28:50,386 - httpx - INFO - HTTP Request: GET https://3.basecampapi.com/3222742/projects/41106708.json "HTTP/1.1 200 OK"
+2026-02-03 14:28:51,390 - app.services.ingestion.basecamp - ERROR - ❌ Error getting last sync time for 37845892: 'NoneType' object has no attribute 'basecamp_sync_state'
+2026-02-03 14:28:51,894 - httpx - INFO - HTTP Request: GET https://3.basecampapi.com/3222742/projects/37845892.json "HTTP/1.1 200 OK"
+2026-02-03 14:28:52,897 - app.services.ingestion.basecamp - ERROR - ❌ Error getting last sync time for 37425961: 'NoneType' object has no attribute 'basecamp_sync_state'
+2026-02-03 14:28:53,458 - httpx - INFO - HTTP Request: GET https://3.basecampapi.com/3222742/projects/37425961.json "HTTP/1.1 200 OK"
+2026-02-03 14:28:54,461 - app.services.ingestion.basecamp - ERROR - ❌ Error getting last sync time for 14694380: 'NoneType' object has no attribute 'basecamp_sync_state'
+2026-02-03 14:28:54,974 - httpx - INFO - HTTP Request: GET https://3.basecampapi.com/3222742/projects/14694380.json "HTTP/1.1 200 OK"
+2026-02-03 14:28:57,862 - root - INFO - Pinecone initialized successfully.
+2026-02-03 14:28:57,952 - project_nexus - INFO - 📅 === STARTING AUTOMATION SCHEDULER ===
+2026-02-03 14:28:57,952 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-03 14:28:57,952 - project_nexus - INFO - ✅ Daily sync job scheduled (every 24 hours)
+2026-02-03 14:28:58,034 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-03 14:28:58,034 - project_nexus - INFO - ✅ Weekly briefing job scheduled (Mondays 9 AM UTC)
+2026-02-03 14:28:58,035 - apscheduler.scheduler - INFO - Added job "daily_sync_job" to job store "default"
+2026-02-03 14:28:58,036 - apscheduler.scheduler - INFO - Added job "generate_executive_briefing" to job store "default"
+2026-02-03 14:28:58,036 - apscheduler.scheduler - INFO - Scheduler started
+2026-02-03 14:28:58,036 - project_nexus - INFO - 🎉 === AUTOMATION SCHEDULER STARTED SUCCESSFULLY ===
+2026-02-03 14:28:58,577 - httpx - INFO - HTTP Request: GET https://3.basecampapi.com/3222742/projects.json "HTTP/1.1 200 OK"
+2026-02-03 14:28:58,580 - app.services.automation.startup_automation - INFO - 🕐 Sync cutoff time: 2026-02-02T08:58:58.580216+00:00
+2026-02-03 14:28:58,580 - app.services.ingestion.basecamp - ERROR - ❌ Error getting last sync time for 41106708: 'NoneType' object has no attribute 'basecamp_sync_state'
+2026-02-03 14:28:58,580 - app.services.automation.startup_automation - INFO - 📋 Project 41106708:
+2026-02-03 14:28:58,580 - app.services.automation.startup_automation - INFO -    Last Sync: None
+2026-02-03 14:28:58,581 - app.services.automation.startup_automation - INFO -    Cutoff: 2026-02-02 08:58:58.580216+00:00
+2026-02-03 14:28:58,581 - app.services.automation.startup_automation - INFO -    ⚠️  Never synced - NEEDS SYNC
+2026-02-03 14:28:58,581 - app.services.ingestion.basecamp - ERROR - ❌ Error getting last sync time for 37845892: 'NoneType' object has no attribute 'basecamp_sync_state'
+2026-02-03 14:28:58,581 - app.services.automation.startup_automation - INFO - 📋 Project 37845892:
+2026-02-03 14:28:58,581 - app.services.automation.startup_automation - INFO -    Last Sync: None
+2026-02-03 14:28:58,581 - app.services.automation.startup_automation - INFO -    Cutoff: 2026-02-02 08:58:58.580216+00:00
+2026-02-03 14:28:58,581 - app.services.automation.startup_automation - INFO -    ⚠️  Never synced - NEEDS SYNC
+2026-02-03 14:28:58,581 - app.services.ingestion.basecamp - ERROR - ❌ Error getting last sync time for 37425961: 'NoneType' object has no attribute 'basecamp_sync_state'
+2026-02-03 14:28:58,581 - app.services.automation.startup_automation - INFO - 📋 Project 37425961:
+2026-02-03 14:28:58,581 - app.services.automation.startup_automation - INFO -    Last Sync: None
+2026-02-03 14:28:58,581 - app.services.automation.startup_automation - INFO -    Cutoff: 2026-02-02 08:58:58.580216+00:00
+2026-02-03 14:28:58,582 - app.services.automation.startup_automation - INFO -    ⚠️  Never synced - NEEDS SYNC
+2026-02-03 14:28:58,582 - app.services.ingestion.basecamp - ERROR - ❌ Error getting last sync time for 14694380: 'NoneType' object has no attribute 'basecamp_sync_state'
+2026-02-03 14:28:58,582 - app.services.automation.startup_automation - INFO - 📋 Project 14694380:
+2026-02-03 14:28:58,582 - app.services.automation.startup_automation - INFO -    Last Sync: None
+2026-02-03 14:28:58,582 - app.services.automation.startup_automation - INFO -    Cutoff: 2026-02-02 08:58:58.580216+00:00
+2026-02-03 14:28:58,582 - app.services.automation.startup_automation - INFO -    ⚠️  Never synced - NEEDS SYNC
+2026-02-03 14:28:58,582 - app.services.automation.startup_automation - INFO - 📊 Projects needing sync: 4/4
+2026-02-03 14:28:58,582 - app.services.automation.startup_automation - INFO -    📋 ['41106708', '37845892', '37425961', '14694380']
+2026-02-03 14:28:58,582 - app.services.ingestion.basecamp - ERROR - ❌ Error getting last sync time for 41106708: 'NoneType' object has no attribute 'basecamp_sync_state'
+2026-02-03 14:28:58,583 - app.services.ingestion.basecamp - ERROR - ❌ Error getting last sync time for 37845892: 'NoneType' object has no attribute 'basecamp_sync_state'
+2026-02-03 14:28:58,583 - app.services.ingestion.basecamp - ERROR - ❌ Error getting last sync time for 37425961: 'NoneType' object has no attribute 'basecamp_sync_state'
+2026-02-03 14:28:58,583 - app.services.ingestion.basecamp - ERROR - ❌ Error getting last sync time for 14694380: 'NoneType' object has no attribute 'basecamp_sync_state'

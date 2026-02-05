@@ -1,0 +1,185 @@
+[15:55:31] ℹ️ Starting comprehensive API testing
+[15:55:31] ℹ️ Base URL: http://localhost:8000/api/v1
+[15:55:31] ℹ️ Found 28 API endpoints to test
+============================================================
+
+[1/28] Testing: Login
+----------------------------------------
+[15:55:31] ❌ POST http://localhost:8000/api/v1/auth/login - HTTP 422
+
+[2/28] Testing: List Accessible Projects
+----------------------------------------
+[15:55:31] ❌ GET http://localhost:8000/api/v1/access/projects - HTTP 401
+
+[3/28] Testing: List Accessible Clients
+----------------------------------------
+[15:55:31] ❌ GET http://localhost:8000/api/v1/access/clients - HTTP 401
+
+[4/28] Testing: GET Context
+----------------------------------------
+[15:55:31] ❌ GET http://localhost:8000/api/v1/context/test-project - HTTP 401
+
+[5/28] Testing: PATCH Context
+----------------------------------------
+[15:55:31] ❌ PATCH http://localhost:8000/api/v1/context/test-project - HTTP 401
+
+[6/28] Testing: DELETE Context
+----------------------------------------
+[15:55:31] ❌ DELETE http://localhost:8000/api/v1/context/test-project - HTTP 401
+
+[7/28] Testing: GET Ops
+----------------------------------------
+[15:55:31] ❌ GET http://localhost:8000/api/v1/ops/test-project - HTTP 401
+
+[8/28] Testing: PATCH Ops
+----------------------------------------
+[15:55:31] ❌ PATCH http://localhost:8000/api/v1/ops/test-project - HTTP 401
+
+[9/28] Testing: DELETE Ops
+----------------------------------------
+[15:55:31] ❌ DELETE http://localhost:8000/api/v1/ops/test-project - HTTP 401
+
+[10/28] Testing: GET Tech
+----------------------------------------
+[15:55:32] ❌ GET http://localhost:8000/api/v1/tech/test-project - HTTP 401
+
+[11/28] Testing: PATCH Tech
+----------------------------------------
+[15:55:32] ❌ PATCH http://localhost:8000/api/v1/tech/test-project - HTTP 401
+
+[12/28] Testing: DELETE Tech
+----------------------------------------
+[15:55:32] ❌ DELETE http://localhost:8000/api/v1/tech/test-project - HTTP 401
+
+[13/28] Testing: GET Commercial
+----------------------------------------
+[15:55:32] ❌ GET http://localhost:8000/api/v1/comm/test-project - HTTP 401
+
+[14/28] Testing: PATCH Commercial
+----------------------------------------
+[15:55:32] ❌ PATCH http://localhost:8000/api/v1/comm/test-project - HTTP 401
+
+[15/28] Testing: DELETE Commercial
+----------------------------------------
+[15:55:32] ❌ DELETE http://localhost:8000/api/v1/comm/test-project - HTTP 401
+
+[16/28] Testing: GET Strategy
+----------------------------------------
+[15:55:32] ❌ GET http://localhost:8000/api/v1/strat/test-project - HTTP 401
+
+[17/28] Testing: PATCH Strategy
+----------------------------------------
+[15:55:32] ❌ PATCH http://localhost:8000/api/v1/strat/test-project - HTTP 401
+
+[18/28] Testing: DELETE Strategy
+----------------------------------------
+[15:55:32] ❌ DELETE http://localhost:8000/api/v1/strat/test-project - HTTP 401
+
+[19/28] Testing: GET Marketing
+----------------------------------------
+[15:55:33] ❌ GET http://localhost:8000/api/v1/mktg/test-project - HTTP 401
+
+[20/28] Testing: PATCH Marketing
+----------------------------------------
+[15:55:33] ❌ PATCH http://localhost:8000/api/v1/mktg/test-project - HTTP 401
+
+[21/28] Testing: DELETE Marketing
+----------------------------------------
+[15:55:33] ❌ DELETE http://localhost:8000/api/v1/mktg/test-project - HTTP 401
+
+[22/28] Testing: GET Misc
+----------------------------------------
+[15:55:33] ❌ GET http://localhost:8000/api/v1/misc/test-project - HTTP 401
+
+[23/28] Testing: PATCH Misc
+----------------------------------------
+[15:55:33] ❌ PATCH http://localhost:8000/api/v1/misc/test-project - HTTP 401
+
+[24/28] Testing: DELETE Misc
+----------------------------------------
+[15:55:33] ❌ DELETE http://localhost:8000/api/v1/misc/test-project - HTTP 401
+
+[25/28] Testing: List Stakeholders
+----------------------------------------
+[15:55:33] ❌ GET http://localhost:8000/api/v1/stakeholders/test-project - HTTP 404
+
+[26/28] Testing: Hierarchy Tree
+----------------------------------------
+[15:55:33] ❌ GET http://localhost:8000/api/v1/stakeholders/tree/test-project - HTTP 404
+
+[27/28] Testing: Manual Upload
+----------------------------------------
+[15:55:33] ❌ POST http://localhost:8000/api/v1/ingest/upload - HTTP 422
+
+[28/28] Testing: Refresh (Automatic Sync)
+----------------------------------------
+[15:55:33] ❌ POST http://localhost:8000/api/v1/ingest/sync - HTTP 404
+
+============================================================
+🏁 API TESTING SUMMARY
+============================================================
+Total Tests: 28
+✅ Passed: 0
+❌ Failed: 28
+📊 Success Rate: 0.0%
+⏱️  Avg Response Time: 0.00s
+
+❌ Failed Tests:
+   • POST http://localhost:8000/api/v1/auth/login
+     Error: HTTP 422 (Status: 422)
+   • GET http://localhost:8000/api/v1/access/projects
+     Error: HTTP 401 (Status: 401)
+   • GET http://localhost:8000/api/v1/access/clients
+     Error: HTTP 401 (Status: 401)
+   • GET http://localhost:8000/api/v1/context/test-project
+     Error: HTTP 401 (Status: 401)
+   • PATCH http://localhost:8000/api/v1/context/test-project
+     Error: HTTP 401 (Status: 401)
+   • DELETE http://localhost:8000/api/v1/context/test-project
+     Error: HTTP 401 (Status: 401)
+   • GET http://localhost:8000/api/v1/ops/test-project
+     Error: HTTP 401 (Status: 401)
+   • PATCH http://localhost:8000/api/v1/ops/test-project
+     Error: HTTP 401 (Status: 401)
+   • DELETE http://localhost:8000/api/v1/ops/test-project
+     Error: HTTP 401 (Status: 401)
+   • GET http://localhost:8000/api/v1/tech/test-project
+     Error: HTTP 401 (Status: 401)
+   • PATCH http://localhost:8000/api/v1/tech/test-project
+     Error: HTTP 401 (Status: 401)
+   • DELETE http://localhost:8000/api/v1/tech/test-project
+     Error: HTTP 401 (Status: 401)
+   • GET http://localhost:8000/api/v1/comm/test-project
+     Error: HTTP 401 (Status: 401)
+   • PATCH http://localhost:8000/api/v1/comm/test-project
+     Error: HTTP 401 (Status: 401)
+   • DELETE http://localhost:8000/api/v1/comm/test-project
+     Error: HTTP 401 (Status: 401)
+   • GET http://localhost:8000/api/v1/strat/test-project
+     Error: HTTP 401 (Status: 401)
+   • PATCH http://localhost:8000/api/v1/strat/test-project
+     Error: HTTP 401 (Status: 401)
+   • DELETE http://localhost:8000/api/v1/strat/test-project
+     Error: HTTP 401 (Status: 401)
+   • GET http://localhost:8000/api/v1/mktg/test-project
+     Error: HTTP 401 (Status: 401)
+   • PATCH http://localhost:8000/api/v1/mktg/test-project
+     Error: HTTP 401 (Status: 401)
+   • DELETE http://localhost:8000/api/v1/mktg/test-project
+     Error: HTTP 401 (Status: 401)
+   • GET http://localhost:8000/api/v1/misc/test-project
+     Error: HTTP 401 (Status: 401)
+   • PATCH http://localhost:8000/api/v1/misc/test-project
+     Error: HTTP 401 (Status: 401)
+   • DELETE http://localhost:8000/api/v1/misc/test-project
+     Error: HTTP 401 (Status: 401)
+   • GET http://localhost:8000/api/v1/stakeholders/test-project
+     Error: HTTP 404 (Status: 404)
+   • GET http://localhost:8000/api/v1/stakeholders/tree/test-project
+     Error: HTTP 404 (Status: 404)
+   • POST http://localhost:8000/api/v1/ingest/upload
+     Error: HTTP 422 (Status: 422)
+   • POST http://localhost:8000/api/v1/ingest/sync
+     Error: HTTP 404 (Status: 404)
+============================================================
+[15:55:34] ✅ Report saved to: api_test_report_20260129_155534.json
